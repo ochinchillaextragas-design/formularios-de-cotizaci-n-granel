@@ -282,27 +282,51 @@ body{
 
 /* ================================================================
    BANNER FOTOGRÁFICO — foto real de flota/instalación
+   (Hero ampliado + logo superpuesto)
 ================================================================ */
-.foto-banner{
-  position:relative;
-  width:100%;
-  height:150px;
-  overflow:hidden;
+.foto-banner {
+  position: relative;
+  width: 100%;
+  height: 350px;               /* antes 150px → ahora tiene presencia */
+  overflow: hidden;
 }
-.foto-banner img{
-  width:100%;height:100%;
-  object-fit:cover;
-  display:block;
+.foto-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%; /* encuadre ajustable */
+  display: block;
 }
-.foto-banner::after{
-  content:'';
-  position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(6,14,63,.05) 0%,rgba(6,10,40,.6) 100%);
+.foto-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(6,14,63,0.15) 0%, rgba(6,10,40,0.55) 100%);
 }
-.foto-banner-caption{
-  position:absolute;left:26px;bottom:13px;z-index:2;
-  color:#fff;font-size:25px;font-weight:900;letter-spacing:.3px;
-  text-shadow:0 1px 5px rgba(0,0,0,.55);
+.foto-banner-caption {
+  position: absolute;
+  left: 26px;
+  bottom: 16px;
+  z-index: 2;
+  color: #fff;
+  font-size: 28px;             /* más grande */
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+/* Logo de la marca superpuesto (nuevo) */
+.foto-banner-logo {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  width: 200px;                /* tamaño del logo; ajustalo según necesites */
+}
+.foto-banner-logo img,
+.foto-banner-logo svg {
+  width: 100%;
+  height: auto;
 }
 
 /* ================================================================
