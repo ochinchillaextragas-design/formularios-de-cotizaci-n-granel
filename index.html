@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extragas Argentina - Cotización de Instalación a Granel</title>
+
+    <style>
+        :root {
+            --primary: #1a3c5e;
+            --secondary: #e63946;
+            --accent: #f4a261;
+            --light: #f8f9fa;
+            --border: #ccc;
+            --text: #222;
+            --gray: #6c757d;
+            --white: #fff;
+            --table-stripe: #f2f5f8;
+            --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            --radius: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: #e8ecf1;
+            color: var(--text);
+            line-height: 1.5;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* ── TOOLBAR ── */
+        .toolbar {
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 24px;
+            background: var(--white);
+            padding: 14px 20px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            max-width: 900px;
+            width: 100%;
+        }
+        .toolbar button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .btn-pdf {
+            background: var(--secondary);
+            color: var(--white);
+        }
+        .btn-pdf:hover {
+            background: #c1121f;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(230, 57, 70, 0.35);
+        }
+        .btn-save {
+            background: #2a9d8f;
+            color: var(--white);
+        }
+        .btn-save:hover {
+            background: #21867a;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(42, 157, 143, 0.35);
+        }
+        .btn-load {
+            background: var(--primary);
+            color: var(--white);
+        }
+        .btn-load:hover {
+            background: #142d47;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(26, 60, 94, 0.35);
+        }
+        .btn-reset {
+            background: var(--white);
+            color: var(--text);
+            border: 2px solid var(--border) !important;
+        }
+        .btn-reset:hover {
+            background: #f1f3f5;
+        }
+
+        /* ── COTIZACIÓN CONTENEDOR ── */
+        .cotizacion {
+            background: var(--white);
+            max-width: 900px;
+            width: 100%;
+            padding: 50px 55px;
+            border-radius: 4px;
+            box-shadow: var(--shadow), 0 0 0 1px rgba(0, 0, 0, 0.04);
+            margin: 0 auto;
+        }
+
+        /* ── ENCABEZADO ── */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 24px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .logo-area {
+            flex-shrink: 0;
+        }
+        .logo-area h1 {
+            color: var(--primary);
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            line-height: 1.1;
+        }
+        .logo-area .sub {
+            color: var(--secondary);
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .logo-area .tagline {
+            font-size: 11px;
+            color: var(--gray);
+            margin-top: 2px;
+        }
+        .doc-info {
+            text-align: right;
+            flex-shrink: 0;
+        }
+        .doc-info .nro {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        .doc-info .fecha input {
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 4px 8px;
+            font-size: 13px;
+            width: 140px;
+            text-align: center;
+        }
+        .doc-info .validez {
+            font-size: 11px;
+            color: var(--gray);
+            margin-top: 2px;
+        }
+        .empresa-data {
+            font-size: 12px;
+            color: var(--gray);
+            text-align: right;
+            margin-top: 4px;
+            line-height: 1.4;
+        }
+
+        /* ── SECCIONES ── */
+        .section {
+            margin-bottom: 20px;
+            border: 1px solid #e0e4e8;
+            border-radius: var(--radius);
+            overflow: hidden;
+        }
+        .section-title {
+            background: #f0f3f7;
+            padding: 10px 16px;
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--primary);
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .section-title::after {
+            content: '▼';
+            font-size: 10px;
+            transition: transform 0.2s;
+        }
+        .section.collapsed .section-title::after {
+            transform: rotate(-90deg);
+        }
+        .section.collapsed .section-body {
+            display: none;
+        }
+        .section-body {
+            padding: 16px;
+        }
+
+        /* ── GRID DE CAMPOS ── */
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+        .form-group label {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--gray);
+            letter-spacing: 0.4px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            border: 1px solid var(--border);
+            border-radius: 5px;
+            padding: 8px 10px;
+            font-size: 14px;
+            font-family: inherit;
+            transition: border 0.2s;
+            width: 100%;
+            background: #fafbfc;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: var(--white);
+            box-shadow: 0 0 0 3px rgba(26, 60, 94, 0.08);
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 60px;
+        }
+        .form-group input[type="number"] {
+            text-align: right;
+            font-weight: 600;
+        }
+        .full-width {
+            grid-column: 1 / -1;
+        }
+
+        /* ── TABLA DE ITEMS ── */
+        .items-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        .items-table thead th {
+            background: var(--primary);
+            color: var(--white);
+            padding: 10px 8px;
+            text-align: center;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            font-weight: 600;
+        }
+        .items-table tbody td {
+            padding: 6px 8px;
+            border-bottom: 1px solid #e9ecef;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .items-table tbody tr:nth-child(even) td {
+            background: var(--table-stripe);
+        }
+        .items-table input {
+            border: 1px solid transparent;
+            background: transparent;
+            padding: 5px 6px;
+            font-size: 13px;
+            width: 100%;
+            text-align: center;
+            border-radius: 3px;
+            transition: all 0.15s;
+            font-family: inherit;
+        }
+        .items-table input:hover {
+            border-color: #d0d5db;
+            background: #fff;
+        }
+        .items-table input:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: #fff;
+            box-shadow: 0 0 0 2px rgba(26, 60, 94, 0.06);
+        }
+        .items-table .desc input {
+            text-align: left;
+            min-width: 180px;
+        }
+        .items-table .cant input,
+        .items-table .precio input {
+            text-align: right;
+            font-weight: 600;
+            width: 80px;
+        }
+        .items-table .subtotal {
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .btn-del-row {
+            background: none;
+            border: none;
+            color: var(--secondary);
+            cursor: pointer;
+            font-size: 16px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            transition: all 0.15s;
+        }
+        .btn-del-row:hover {
+            background: #ffe5e7;
+        }
+        .btn-add-row {
+            margin-top: 10px;
+            background: #e9f5f2;
+            border: 1px dashed #2a9d8f;
+            color: #2a9d8f;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+        .btn-add-row:hover {
+            background: #d0efe8;
+        }
+
+        /* ── TOTALES ── */
+        .totales {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 16px;
+        }
+        .totales-box {
+            background: #f8fafc;
+            border: 1px solid #e0e4e8;
+            border-radius: var(--radius);
+            padding: 16px 24px;
+            min-width: 280px;
+        }
+        .totales-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            font-size: 14px;
+        }
+        .totales-row.total {
+            border-top: 2px solid var(--primary);
+            margin-top: 6px;
+            padding-top: 10px;
+            font-weight: 800;
+            font-size: 18px;
+            color: var(--primary);
+        }
+        .totales-row.iva {
+            color: var(--gray);
+            font-size: 12px;
+        }
+
+        /* ── FIRMAS ── */
+        .firmas {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e4e8;
+        }
+        .firma-linea {
+            border-bottom: 1px solid var(--text);
+            margin-top: 50px;
+            margin-bottom: 6px;
+        }
+        .firma-label {
+            text-align: center;
+            font-size: 12px;
+            color: var(--gray);
+            font-weight: 600;
+        }
+
+        /* ── CONDICIONES ── */
+        .condiciones {
+            margin-top: 20px;
+            font-size: 11px;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+        .condiciones textarea {
+            width: 100%;
+            border: 1px dashed var(--border);
+            border-radius: 4px;
+            padding: 10px;
+            font-size: 11px;
+            font-family: inherit;
+            resize: vertical;
+            min-height: 70px;
+            background: #fdfdfd;
+        }
+
+        /* ── MARCA DE AGUA ── */
+        .marca-agua {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-25deg);
+            font-size: 80px;
+            font-weight: 900;
+            color: rgba(0, 0, 0, 0.03);
+            pointer-events: none;
+            z-index: 0;
+            white-space: nowrap;
+            letter-spacing: 20px;
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 768px) {
+            .cotizacion {
+                padding: 24px 18px;
+            }
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .doc-info {
+                text-align: center;
+                width: 100%;
+            }
+            .empresa-data {
+                text-align: center;
+            }
+            .firmas {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            .totales-box {
+                min-width: auto;
+                width: 100%;
+            }
+        }
+
+        /* ── ESTILOS DE IMPRESIÓN / PDF ── */
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .toolbar,
+            .btn-add-row,
+            .btn-del-row,
+            .section-title::after,
+            .marca-agua {
+                display: none !important;
+            }
+            .cotizacion {
+                box-shadow: none;
+                border-radius: 0;
+                padding: 20px 30px;
+                max-width: 100%;
+                page-break-inside: avoid;
+            }
+            .section {
+                border: 1px solid #ccc;
+                page-break-inside: avoid;
+            }
+            .section.collapsed .section-body {
+                display: block !important;
+            }
+            .section-title {
+                background: #eee !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .items-table thead th {
+                background: var(--primary) !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            input,
+            select,
+            textarea {
+                border: none !important;
+                background: transparent !important;
+                box-shadow: none !important;
+                padding: 2px 4px !important;
+            }
+            input[type="number"] {
+                text-align: right;
+            }
+            @page {
+                size: A4;
+                margin: 10mm;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ─── BARRA DE HERRAMIENTAS ─── -->
+    <div class="toolbar" id="toolbar">
+        <button class="btn-pdf" onclick="descargarPDF()" title="Descargar como PDF">
+            📥 Descargar PDF
+        </button>
+        <button class="btn-save" onclick="guardarCotizacion()" title="Guardar en el navegador">
+            💾 Guardar
+        </button>
+        <button class="btn-load" onclick="cargarCotizacion()" title="Cargar última cotización guardada">
+            📂 Cargar
+        </button>
+        <button class="btn-reset" onclick="nuevaCotizacion()" title="Limpiar todo y empezar de nuevo">
+            ✨ Nueva Cotización
+        </button>
+    </div>
+
+    <!-- ─── COTIZACIÓN ─── -->
+    <div class="cotizacion" id="cotizacion">
+
+        <!-- ENCABEZADO -->
+        <div class="header">
+            <div class="logo-area">
+                <h1>EXTRAGAS</h1>
+                <div class="sub">Argentina</div>
+                <div class="tagline">Soluciones en Gas a Granel</div>
+            </div>
+            <div class="doc-info">
+                <div class="nro">COTIZACIÓN N° <input type="text" id="nro-cotizacion" value="001-2026" style="width:100px;font-weight:800;text-align:center;border:1px solid #ccc;border-radius:4px;padding:2px 6px;"></div>
+                <div class="fecha" style="margin-top:6px;">Fecha: <input type="date" id="fecha-cotizacion"></div>
+                <div class="validez">Válida por 15 días</div>
+                <div class="empresa-data">
+                    Extragas Argentina S.A.<br>
+                    CUIT: 30-XXXXXXXX-X<br>
+                    Tel: (011) 4XXX-XXXX<br>
+                    info@extragas.com.ar
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 1: DATOS DEL CLIENTE -->
+        <div class="section" id="sec-cliente">
+            <div class="section-title" onclick="toggleSection('sec-cliente')">📋 Datos del Cliente</div>
+            <div class="section-body">
+                <div class="form-grid">
+                    <div class="form-group full-width">
+                        <label>Razón Social / Nombre y Apellido</label>
+                        <input type="text" id="cliente-nombre" placeholder="Ej: Juan Pérez / Empresa S.A.">
+                    </div>
+                    <div class="form-group">
+                        <label>CUIT / DNI</label>
+                        <input type="text" id="cliente-cuit" placeholder="XX-XXXXXXXX-X">
+                    </div>
+                    <div class="form-group">
+                        <label>Teléfono</label>
+                        <input type="text" id="cliente-tel" placeholder="(011) 15-XXXX-XXXX">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="cliente-email" placeholder="cliente@correo.com">
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Dirección de Instalación</label>
+                        <input type="text" id="cliente-direccion" placeholder="Calle, número, piso, depto., localidad, provincia">
+                    </div>
+                    <div class="form-group">
+                        <label>Localidad</label>
+                        <input type="text" id="cliente-localidad">
+                    </div>
+                    <div class="form-group">
+                        <label>Provincia</label>
+                        <select id="cliente-provincia">
+                            <option value="">Seleccionar...</option>
+                            <option>Buenos Aires</option>
+                            <option>CABA</option>
+                            <option>Catamarca</option>
+                            <option>Chaco</option>
+                            <option>Chubut</option>
+                            <option>Córdoba</option>
+                            <option>Corrientes</option>
+                            <option>Entre Ríos</option>
+                            <option>Formosa</option>
+                            <option>Jujuy</option>
+                            <option>La Pampa</option>
+                            <option>La Rioja</option>
+                            <option>Mendoza</option>
+                            <option>Misiones</option>
+                            <option>Neuquén</option>
+                            <option>Río Negro</option>
+                            <option>Salta</option>
+                            <option>San Juan</option>
+                            <option>San Luis</option>
+                            <option>Santa Cruz</option>
+                            <option>Santa Fe</option>
+                            <option>Santiago del Estero</option>
+                            <option>Tierra del Fuego</option>
+                            <option>Tucumán</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 2: TIPO DE INSTALACIÓN -->
+        <div class="section" id="sec-tipo">
+            <div class="section-title" onclick="toggleSection('sec-tipo')">🔧 Tipo de Instalación</div>
+            <div class="section-body">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Categoría</label>
+                        <select id="tipo-categoria" onchange="actualizarTipoInstalacion()">
+                            <option value="">Seleccionar categoría...</option>
+                            <option value="residencial">Residencial</option>
+                            <option value="comercial">Comercial</option>
+                            <option value="industrial">Industrial</option>
+                            <option value="agro">Agro / Rural</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Tipo de Instalación Específica</label>
+                        <select id="tipo-especifico" onchange="cargarItemsPorDefecto()">
+                            <option value="">Seleccionar...</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Consumo Estimado (m³/mes)</label>
+                        <input type="number" id="consumo-estimado" placeholder="Ej: 300" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label>Capacidad del Tanque (L)</label>
+                        <select id="capacidad-tanque">
+                            <option value="">Seleccionar...</option>
+                            <option value="500">500 L</option>
+                            <option value="1000">1.000 L</option>
+                            <option value="2000">2.000 L</option>
+                            <option value="4000">4.000 L</option>
+                            <option value="8000">8.000 L</option>
+                            <option value="12000">12.000 L</option>
+                            <option value="16000">16.000 L</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Ubicación del Tanque</label>
+                        <select id="ubicacion-tanque">
+                            <option value="">Seleccionar...</option>
+                            <option>Aéreo (sobre base)</option>
+                            <option>Enterrado</option>
+                            <option>Semienterrado</option>
+                            <option>Zunchado a pared</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Observaciones de la Instalación</label>
+                        <textarea id="obs-instalacion" placeholder="Detalles relevantes: distancias, accesos, normativa aplicable, etc."></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 3: MATERIALES Y EQUIPOS -->
+        <div class="section" id="sec-materiales">
+            <div class="section-title" onclick="toggleSection('sec-materiales')">📦 Materiales y Equipos</div>
+            <div class="section-body">
+                <table class="items-table" id="tabla-items">
+                    <thead>
+                        <tr>
+                            <th style="width:5%">#</th>
+                            <th class="desc" style="width:38%">Descripción</th>
+                            <th style="width:12%">Cantidad</th>
+                            <th style="width:12%">Unidad</th>
+                            <th style="width:15%">Precio Unit. ($)</th>
+                            <th style="width:15%">Subtotal ($)</th>
+                            <th style="width:3%"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="items-body">
+                        <!-- Filas dinámicas -->
+                    </tbody>
+                </table>
+                <button class="btn-add-row" onclick="agregarFila()">+ Agregar ítem</button>
+
+                <!-- Mano de obra -->
+                <div class="form-grid" style="margin-top:16px;">
+                    <div class="form-group">
+                        <label>Mano de Obra - Horas estimadas</label>
+                        <input type="number" id="horas-mo" value="0" min="0" onchange="calcularTotales()">
+                    </div>
+                    <div class="form-group">
+                        <label>Costo Hora ($)</label>
+                        <input type="number" id="costo-hora" value="8500" min="0" onchange="calcularTotales()">
+                    </div>
+                    <div class="form-group">
+                        <label>Subtotal Mano de Obra ($)</label>
+                        <input type="number" id="subtotal-mo" value="0" readonly style="background:#e9ecef;font-weight:700;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 4: TOTALES -->
+        <div class="section" id="sec-totales">
+            <div class="section-title" onclick="toggleSection('sec-totales')">💰 Totales</div>
+            <div class="section-body">
+                <div class="totales">
+                    <div class="totales-box">
+                        <div class="totales-row">
+                            <span>Subtotal Materiales:</span>
+                            <span id="display-subtotal-mat">$ 0,00</span>
+                        </div>
+                        <div class="totales-row">
+                            <span>Subtotal Mano de Obra:</span>
+                            <span id="display-subtotal-mo">$ 0,00</span>
+                        </div>
+                        <div class="totales-row iva">
+                            <span>IVA (21%):</span>
+                            <span id="display-iva">$ 0,00</span>
+                        </div>
+                        <div class="totales-row total">
+                            <span>TOTAL:</span>
+                            <span id="display-total">$ 0,00</span>
+                        </div>
+                        <div style="font-size:10px;color:var(--gray);margin-top:6px;">
+                            * Precios expresados en pesos argentinos. No incluyen flete ni conexión de gas si no se especifica.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 5: CONDICIONES Y FIRMAS -->
+        <div class="section" id="sec-condiciones">
+            <div class="section-title" onclick="toggleSection('sec-condiciones')">📝 Condiciones y Firmas</div>
+            <div class="section-body">
+                <div class="condiciones">
+                    <label style="font-weight:700;font-size:12px;">Condiciones de la cotización:</label>
+                    <textarea id="condiciones-texto">- Precios válidos por 15 días desde la fecha de emisión.
+                        - Forma de pago: 50% anticipo, 50% contra entrega. (Consultar otras opciones).
+                        - El plazo de instalación se acordará al confirmar la orden.
+                        - La instalación cumple con normativas NAG y disposiciones de ENARGAS.
+                        - No incluye: flete (a cotizar según ubicación), obra civil, conexión eléctrica, trámites municipales.
+                        - Garantía sobre materiales: según especificaciones del fabricante.
+                        - Garantía sobre mano de obra: 6 meses.</textarea>
+                </div>
+                <div class="firmas">
+                    <div>
+                        <div class="firma-linea"></div>
+                        <div class="firma-label">Firma del Cliente / Aclaración</div>
+                    </div>
+                    <div>
+                        <div class="firma-linea"></div>
+                        <div class="firma-label">Extragas Argentina - Representante</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ──────────────────────────────────────
+        // DATOS Y CONFIGURACIÓN
+        // ──────────────────────────────────────
+        let contadorItems = 0;
+
+        const tiposInstalacion = {
+            residencial: [
+                'Vivienda unifamiliar - Calefacción + ACS',
+                'Vivienda unifamiliar - Solo cocina',
+                'Vivienda unifamiliar - Calefacción + cocina + ACS',
+                'Departamento - Consumo bajo',
+                'Barrio privado / Country',
+                'PH / Casa de fin de semana',
+            ],
+            comercial: [
+                'Restaurante / Parrilla',
+                'Hotel / Hospedaje',
+                'Lavadero industrial',
+                'Panadería / Confitería',
+                'Gimnasio / Vestuarios',
+                'Local comercial - Calefacción',
+                'Edificio de oficinas',
+            ],
+            industrial: [
+                'Fábrica - Proceso productivo',
+                'Galpón - Calefacción zonal',
+                'Planta de tratamiento',
+                'Secado de granos / productos',
+                'Caldera industrial',
+                'Horno industrial',
+            ],
+            agro: [
+                'Criadero de animales (avícola/porcino)',
+                'Invernadero / Vivero',
+                'Secadora de granos',
+                'Campo / Estancia - Casa principal',
+                'Tambo / Lechería',
+            ],
+        };
+
+        const itemsDefault = {
+            'Vivienda unifamiliar - Calefacción + ACS': [
+                { desc: 'Tanque GLP 2000 L c/base y accesorios', cant: 1, unidad: 'u', precio: 1200000 },
+                { desc: 'Regulador de 1° etapa GLP', cant: 1, unidad: 'u', precio: 45000 },
+                { desc: 'Regulador de 2° etapa GLP', cant: 1, unidad: 'u', precio: 38000 },
+                { desc: 'Cañería polietileno PE-AL-PE 20mm x 10m', cant: 1, unidad: 'rollo', precio: 35000 },
+                { desc: 'Válvula de seguridad y corte', cant: 1, unidad: 'u', precio: 28000 },
+                { desc: 'Juego de conectores y accesorios', cant: 1, unidad: 'kit', precio: 22000 },
+                { desc: 'Manómetro 0-10 bar', cant: 1, unidad: 'u', precio: 15000 },
+            ],
+            'Restaurante / Parrilla': [
+                { desc: 'Tanque GLP 4000 L c/base y accesorios', cant: 1, unidad: 'u', precio: 2200000 },
+                { desc: 'Regulador de 1° etapa industrial', cant: 1, unidad: 'u', precio: 85000 },
+                { desc: 'Regulador de 2° etapa industrial', cant: 1, unidad: 'u', precio: 65000 },
+                { desc: 'Cañería polietileno 25mm x 15m', cant: 1, unidad: 'rollo', precio: 55000 },
+                { desc: 'Válvula de seguridad reforzada', cant: 2, unidad: 'u', precio: 35000 },
+                { desc: 'Kit conectores industriales', cant: 1, unidad: 'kit', precio: 45000 },
+            ],
+            'Fábrica - Proceso productivo': [
+                { desc: 'Tanque GLP 8000 L c/base y accesorios', cant: 1, unidad: 'u', precio: 4800000 },
+                { desc: 'Regulador industrial alta capacidad', cant: 1, unidad: 'u', precio: 180000 },
+                { desc: 'Vaporizador eléctrico 300 kg/h', cant: 1, unidad: 'u', precio: 950000 },
+                { desc: 'Cañería acero sched.40 2" x 20m', cant: 1, unidad: 'tramo', precio: 280000 },
+                { desc: 'Válvulas de bloqueo industriales', cant: 3, unidad: 'u', precio: 65000 },
+                { desc: 'Sistema de medición y control', cant: 1, unidad: 'kit', precio: 350000 },
+            ],
+            'Criadero de animales (avícola/porcino)': [
+                { desc: 'Tanque GLP 4000 L c/base', cant: 1, unidad: 'u', precio: 2200000 },
+                { desc: 'Regulador de 1° etapa', cant: 1, unidad: 'u', precio: 45000 },
+                { desc: 'Calefactores infrarrojos GLP', cant: 6, unidad: 'u', precio: 120000 },
+                { desc: 'Cañería polietileno 25mm x 30m', cant: 1, unidad: 'rollo', precio: 90000 },
+                { desc: 'Termostato digital', cant: 2, unidad: 'u', precio: 35000 },
+            ],
+        };
+
+        // ──────────────────────────────────────
+        // INICIALIZACIÓN
+        // ──────────────────────────────────────
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('fecha-cotizacion').value = new Date().toISOString().split('T')[0];
+            // Cargar algunos items por defecto para que no esté vacío
+            agregarFila();
+            agregarFila();
+            agregarFila();
+            actualizarTipoInstalacion();
+            calcularTotales();
+        });
+
+        // ──────────────────────────────────────
+        // SECCIONES COLAPSABLES
+        // ──────────────────────────────────────
+        function toggleSection(id) {
+            document.getElementById(id).classList.toggle('collapsed');
+        }
+
+        // ──────────────────────────────────────
+        // TIPO DE INSTALACIÓN DINÁMICO
+        // ──────────────────────────────────────
+        function actualizarTipoInstalacion() {
+            const categoria = document.getElementById('tipo-categoria').value;
+            const selectEspecifico = document.getElementById('tipo-especifico');
+            selectEspecifico.innerHTML = '<option value="">Seleccionar...</option>';
+
+            if (categoria && tiposInstalacion[categoria]) {
+                tiposInstalacion[categoria].forEach(tipo => {
+                    const opt = document.createElement('option');
+                    opt.value = tipo;
+                    opt.textContent = tipo;
+                    selectEspecifico.appendChild(opt);
+                });
+            }
+        }
+
+        function cargarItemsPorDefecto() {
+            const tipo = document.getElementById('tipo-especifico').value;
+            if (!tipo || !itemsDefault[tipo]) return;
+
+            // Preguntar antes de sobreescribir
+            const tbody = document.getElementById('items-body');
+            if (tbody.children.length > 0 && contadorItems > 0) {
+                if (!confirm('¿Reemplazar los ítems actuales con la configuración sugerida para "' + tipo +
+                        '"?\n\n(Podés cancelar y agregarlos manualmente)')) {
+                    return;
+                }
+            }
+
+            // Limpiar tabla
+            tbody.innerHTML = '';
+            contadorItems = 0;
+
+            // Cargar items por defecto
+            itemsDefault[tipo].forEach(item => {
+                agregarFila(item);
+            });
+
+            calcularTotales();
+        }
+
+        // ──────────────────────────────────────
+        // TABLA DE ÍTEMS
+        // ──────────────────────────────────────
+        function agregarFila(itemPredef = null) {
+            contadorItems++;
+            const tbody = document.getElementById('items-body');
+            const tr = document.createElement('tr');
+            tr.setAttribute('data-id', contadorItems);
+
+            const desc = itemPredef ? itemPredef.desc : '';
+            const cant = itemPredef ? itemPredef.cant : 1;
+            const unidad = itemPredef ? itemPredef.unidad : 'u';
+            const precio = itemPredef ? itemPredef.precio : 0;
+
+            tr.innerHTML = `
+            <td>${contadorItems}</td>
+            <td class="desc"><input type="text" value="${desc}" placeholder="Descripción del ítem" onchange="calcularTotales()"></td>
+            <td class="cant"><input type="number" value="${cant}" min="1" step="1" onchange="calcularTotales()"></td>
+            <td><input type="text" value="${unidad}" style="width:50px;" onchange="calcularTotales()"></td>
+            <td class="precio"><input type="number" value="${precio}" min="0" step="0.01" onchange="calcularTotales()"></td>
+            <td class="subtotal">$ 0,00</td>
+            <td><button class="btn-del-row" onclick="eliminarFila(this, ${contadorItems})" title="Eliminar ítem">✕</button></td>
+          `;
+
+            tbody.appendChild(tr);
+            calcularTotales();
+
+            // Enfocar el campo descripción si es nuevo
+            if (!itemPredef) {
+                setTimeout(() => {
+                    const inputDesc = tr.querySelector('.desc input');
+                    if (inputDesc) inputDesc.focus();
+                }, 100);
+            }
+        }
+
+        function eliminarFila(boton, id) {
+            const tr = boton.closest('tr');
+            if (tr) {
+                tr.style.opacity = '0';
+                tr.style.transition = 'opacity 0.2s';
+                setTimeout(() => {
+                    tr.remove();
+                    renumerarFilas();
+                    calcularTotales();
+                }, 200);
+            }
+        }
+
+        function renumerarFilas() {
+            const filas = document.querySelectorAll('#items-body tr');
+            filas.forEach((fila, index) => {
+                fila.querySelector('td:first-child').textContent = index + 1;
+            });
+        }
+
+        // ──────────────────────────────────────
+        // CÁLCULO DE TOTALES
+        // ──────────────────────────────────────
+        function calcularTotales() {
+            let subtotalMat = 0;
+            const filas = document.querySelectorAll('#items-body tr');
+
+            filas.forEach(fila => {
+                const cantInput = fila.querySelector('.cant input');
+                const precioInput = fila.querySelector('.precio input');
+                const subtotalTd = fila.querySelector('.subtotal');
+
+                const cant = parseFloat(cantInput?.value) || 0;
+                const precio = parseFloat(precioInput?.value) || 0;
+                const sub = cant * precio;
+
+                if (subtotalTd) {
+                    subtotalTd.textContent = '$ ' + sub.toLocaleString('es-AR', { minimumFractionDigits: 2,
+                        maximumFractionDigits: 2 });
+                }
+                subtotalMat += sub;
+            });
+
+            // Mano de obra
+            const horas = parseFloat(document.getElementById('horas-mo')?.value) || 0;
+            const costoHora = parseFloat(document.getElementById('costo-hora')?.value) || 0;
+            const subtotalMO = horas * costoHora;
+
+            document.getElementById('subtotal-mo').value = subtotalMO.toFixed(2);
+
+            // Totales
+            const subtotalGeneral = subtotalMat + subtotalMO;
+            const iva = subtotalGeneral * 0.21;
+            const total = subtotalGeneral + iva;
+
+            // Actualizar displays
+            document.getElementById('display-subtotal-mat').textContent = '$ ' + subtotalMat.toLocaleString(
+            'es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            document.getElementById('display-subtotal-mo').textContent = '$ ' + subtotalMO.toLocaleString('es-AR', {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            });
+            document.getElementById('display-iva').textContent = '$ ' + iva.toLocaleString('es-AR', {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2 });
+            document.getElementById('display-total').textContent = '$ ' + total.toLocaleString('es-AR', {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2 });
+        }
+
+        // ──────────────────────────────────────
+        // GUARDAR / CARGAR (LocalStorage)
+        // ──────────────────────────────────────
+        function guardarCotizacion() {
+            const datos = {
+                nro: document.getElementById('nro-cotizacion').value,
+                fecha: document.getElementById('fecha-cotizacion').value,
+                cliente: {
+                    nombre: document.getElementById('cliente-nombre').value,
+                    cuit: document.getElementById('cliente-cuit').value,
+                    tel: document.getElementById('cliente-tel').value,
+                    email: document.getElementById('cliente-email').value,
+                    direccion: document.getElementById('cliente-direccion').value,
+                    localidad: document.getElementById('cliente-localidad').value,
+                    provincia: document.getElementById('cliente-provincia').value,
+                },
+                instalacion: {
+                    categoria: document.getElementById('tipo-categoria').value,
+                    especifico: document.getElementById('tipo-especifico').value,
+                    consumo: document.getElementById('consumo-estimado').value,
+                    capacidad: document.getElementById('capacidad-tanque').value,
+                    ubicacion: document.getElementById('ubicacion-tanque').value,
+                    obs: document.getElementById('obs-instalacion').value,
+                },
+                items: [],
+                horasMO: document.getElementById('horas-mo').value,
+                costoHora: document.getElementById('costo-hora').value,
+                condiciones: document.getElementById('condiciones-texto').value,
+            };
+
+            // Guardar items
+            document.querySelectorAll('#items-body tr').forEach(fila => {
+                const inputs = fila.querySelectorAll('input');
+                datos.items.push({
+                    desc: inputs[0]?.value || '',
+                    cant: inputs[1]?.value || '1',
+                    unidad: inputs[2]?.value || 'u',
+                    precio: inputs[3]?.value || '0',
+                });
+            });
+
+            localStorage.setItem('extragas_cotizacion', JSON.stringify(datos));
+            alert('✅ Cotización guardada exitosamente en el navegador.');
+        }
+
+        function cargarCotizacion() {
+            const json = localStorage.getItem('extragas_cotizacion');
+            if (!json) {
+                alert('⚠️ No hay ninguna cotización guardada.');
+                return;
+            }
+
+            if (!confirm('¿Cargar la última cotización guardada? Se reemplazarán los datos actuales.')) return;
+
+            const datos = JSON.parse(json);
+
+            document.getElementById('nro-cotizacion').value = datos.nro || '';
+            document.getElementById('fecha-cotizacion').value = datos.fecha || '';
+            document.getElementById('cliente-nombre').value = datos.cliente?.nombre || '';
+            document.getElementById('cliente-cuit').value = datos.cliente?.cuit || '';
+            document.getElementById('cliente-tel').value = datos.cliente?.tel || '';
+            document.getElementById('cliente-email').value = datos.cliente?.email || '';
+            document.getElementById('cliente-direccion').value = datos.cliente?.direccion || '';
+            document.getElementById('cliente-localidad').value = datos.cliente?.localidad || '';
+            document.getElementById('cliente-provincia').value = datos.cliente?.provincia || '';
+            document.getElementById('tipo-categoria').value = datos.instalacion?.categoria || '';
+            actualizarTipoInstalacion();
+            document.getElementById('tipo-especifico').value = datos.instalacion?.especifico || '';
+            document.getElementById('consumo-estimado').value = datos.instalacion?.consumo || '';
+            document.getElementById('capacidad-tanque').value = datos.instalacion?.capacidad || '';
+            document.getElementById('ubicacion-tanque').value = datos.instalacion?.ubicacion || '';
+            document.getElementById('obs-instalacion').value = datos.instalacion?.obs || '';
+            document.getElementById('horas-mo').value = datos.horasMO || '0';
+            document.getElementById('costo-hora').value = datos.costoHora || '8500';
+            document.getElementById('condiciones-texto').value = datos.condiciones || '';
+
+            // Limpiar y cargar items
+            const tbody = document.getElementById('items-body');
+            tbody.innerHTML = '';
+            contadorItems = 0;
+            if (datos.items && datos.items.length > 0) {
+                datos.items.forEach(item => {
+                    agregarFila({
+                        desc: item.desc,
+                        cant: parseFloat(item.cant) || 1,
+                        unidad: item.unidad || 'u',
+                        precio: parseFloat(item.precio) || 0,
+                    });
+                });
+            } else {
+                agregarFila();
+                agregarFila();
+                agregarFila();
+            }
+
+            calcularTotales();
+            alert('✅ Cotización cargada exitosamente.');
+        }
+
+        function nuevaCotizacion() {
+            if (!confirm('¿Crear una nueva cotización? Se perderán los datos no guardados.')) return;
+            location.reload();
+        }
+
+        // ──────────────────────────────────────
+        // DESCARGAR PDF
+        // ──────────────────────────────────────
+        function descargarPDF() {
+            // Expandir todas las secciones antes de imprimir
+            const seccionesColapsadas = document.querySelectorAll('.section.collapsed');
+            seccionesColapsadas.forEach(sec => sec.classList.remove('collapsed'));
+
+            // Título para el PDF
+            const tituloOriginal = document.title;
+            const nro = document.getElementById('nro-cotizacion').value || 'sin-numero';
+            document.title = 'Extragas-Cotizacion-' + nro.replace(/[^a-zA-Z0-9]/g, '-');
+
+            // Imprimir
+            window.print();
+
+            // Restaurar
+            document.title = tituloOriginal;
+        }
+
+        // ──────────────────────────────────────
+        // DETECTAR CAMBIOS EN CAMPOS NUMÉRICOS
+        // ──────────────────────────────────────
+        document.addEventListener('input', function(e) {
+            if (e.target.closest('#items-body') ||
+                e.target.id === 'horas-mo' ||
+                e.target.id === 'costo-hora') {
+                calcularTotales();
+            }
+        });
+    </script>
+</body>
+</html>
