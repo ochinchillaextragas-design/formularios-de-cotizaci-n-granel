@@ -1,0 +1,2 @@
+import { Section } from './Section'
+export function TechnicalPlan({ capacity }:{capacity:string}) { return <Section title="📐 Plano Técnico">{capacity ? <div className="plan-placeholder"><strong>Plano tipo — Tanque de {Number(capacity).toLocaleString('es-AR')} L</strong><p>La migración de los planos base64 se realizará como activos independientes en la siguiente fase, evitando modificar manualmente los originales.</p></div> : <p className="empty">Seleccioná la capacidad del tanque para asociar el plano de referencia.</p>}</Section> }

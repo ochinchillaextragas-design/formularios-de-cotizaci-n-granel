@@ -1,0 +1,2 @@
+import { Section } from './Section'
+export function Conditions({value,onChange}:{value:string;onChange:(v:string)=>void}) { return <Section title="📝 Condiciones y Firmas"><label>Condiciones de la cotización<textarea className="conditions" value={value} onChange={e=>onChange(e.target.value)} /></label><div className="signatures"><span>Firma del Cliente / Aclaración</span><span>Extragas — Representante</span></div></Section> }
