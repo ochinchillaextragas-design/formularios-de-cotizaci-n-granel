@@ -1,13 +1,168 @@
-:root{font-family:Arial,Helvetica,sans-serif;color:#1d2530;background:#edf0f5;--blue:#060e9f;--green:#00953a;--violet:#606db2;--line:#d9dee8}*{box-sizing:border-box}body{margin:0}.brand-stripe{height:8px;background:linear-gradient(90deg,var(--blue) 0 70%,var(--green) 70%)}.toolbar{position:sticky;z-index:5;top:0;background:#fff;border-bottom:1px solid var(--line);padding:12px max(16px,calc((100% - 1080px)/2));display:flex;justify-content:space-between;align-items:center;gap:16px}.toolbar div{display:flex;gap:8px;flex-wrap:wrap}.toolbar button,.toolbar a,.add{border:0;border-radius:5px;padding:9px 12px;background:var(--blue);color:#fff;text-decoration:none;cursor:pointer;font-weight:700}.toolbar a{background:#556070}.page{width:min(1080px,calc(100% - 24px));margin:22px auto;background:#fff;box-shadow:0 3px 24px #24304a22}.header{display:flex;justify-content:space-between;padding:34px 42px;border-bottom:4px solid var(--blue)}.logo{font-size:38px;line-height:1;color:var(--blue);font-weight:900;letter-spacing:-2px}.header p{color:#555;margin:8px 0}.header em{color:var(--green)}.document-info{display:grid;gap:8px;text-align:right}.document-info label{display:flex;gap:10px;align-items:center;font-weight:700}.document-info input{width:150px}.hero{background:linear-gradient(110deg,var(--blue),#2734b8 60%,var(--green));color:#fff;padding:20px 42px;display:flex;justify-content:space-between}.section{margin:22px 34px;border:1px solid var(--line);border-radius:6px;overflow:hidden}.section h2{font-size:16px;margin:0;padding:12px 16px;color:#fff;background:var(--blue)}.section-body{padding:20px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.grid.three{grid-template-columns:repeat(3,1fr)}label{font-size:12px;font-weight:700;color:#465064;display:grid;gap:6px}.wide{grid-column:1/-1}input,select,textarea{width:100%;border:1px solid #bac2d0;border-radius:4px;padding:9px;font:inherit;color:#172033;background:#fff}textarea{min-height:80px;resize:vertical}.tank-options{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.tank-options button{border:2px solid var(--violet);background:#fff;color:#404b91;border-radius:6px;padding:14px 6px;cursor:pointer}.tank-options .selected{background:var(--violet);color:#fff}.plan-placeholder,.empty{text-align:center;padding:24px;border:1px dashed #9da5b5;background:#f7f8fa;color:#687184}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;min-width:800px}th,td{border-bottom:1px solid var(--line);padding:8px;text-align:right}th{font-size:11px;color:#596375;background:#f4f6f9}th:nth-child(2),td:nth-child(2){text-align:left}
+:root{font-family:Arial,Helvetica,sans-serif;color:#1d2530;background:#edf0f5;--blue:#060e9f;--green:#00953a;--violet:#606db2;--line:#d9dee8}*{box-sizing:border-box}body{margin:0}.brand-stripe{height:8px;background:linear-gradient(90deg,var(--blue) 0 70%,var(--green) 70%)}/* Barra superior: marca, navegación de módulos y acciones del cotizador.
+   Grilla en ambos anchos: en móvil apila (marca+cuenta / navegación / acciones)
+   y en escritorio colapsa a una sola fila, para no gastar alto en sticky. */
+.toolbar{display:grid;grid-template-columns:1fr auto;gap:0 12px;align-items:center;background:#fff;border-bottom:1px solid var(--line);padding:14px max(16px,calc((100% - 1400px)/2)) 0}
+.toolbar-brand{grid-column:1;grid-row:1;display:flex;align-items:center;gap:12px;min-width:0}
+.brand-logo{height:42px;width:auto;display:block}
+.brand-tag{font-size:12px;color:#5b6577;font-weight:600;align-self:flex-end;padding-bottom:5px}
+.toolbar .user-chip{grid-column:2;grid-row:1;width:44px;height:44px;border-radius:50%;border:0;background:var(--blue);color:#fff;font:inherit;font-weight:700;font-size:13px;cursor:pointer;display:grid;place-items:center;padding:0}
+.toolbar .user-chip:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+/* Dos destinos de peso equivalente, nunca pegados. */
+.module-nav{grid-column:1/-1;grid-row:2;display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0 24px}
+.toolbar .module-tab{display:flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 14px;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:#3d4757;font:inherit;font-size:15px;font-weight:700;cursor:pointer;transition:background .12s,border-color .12s,color .12s}
+.toolbar .module-tab:hover{background:#f4f6fb;border-color:var(--violet)}
+.toolbar .module-tab[aria-current=page]{background:var(--blue);border-color:var(--blue);color:#fff}
+.toolbar .module-tab:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+.toolbar-actions{grid-column:1/-1;grid-row:3;display:flex;gap:8px;flex-wrap:wrap;padding-bottom:12px}
+@media(min-width:1024px){
+  .toolbar{position:sticky;top:0;z-index:600;grid-template-columns:auto auto 1fr auto;padding-top:10px;padding-bottom:10px;column-gap:28px}
+  .toolbar-brand{grid-column:1;grid-row:1}
+  .module-nav{grid-column:2;grid-row:1;grid-template-columns:auto auto;gap:14px;margin:0}
+  .toolbar .module-tab{min-height:46px;padding:0 26px}
+  .toolbar-actions{grid-column:3;grid-row:1;justify-content:flex-end;padding-bottom:0}
+  .toolbar .user-chip{grid-column:4;grid-row:1}
+}
+.toolbar button,.toolbar a,.add{border:0;border-radius:5px;padding:9px 12px;background:var(--blue);color:#fff;text-decoration:none;cursor:pointer;font-weight:700}.toolbar a{background:#556070}.page{width:min(1080px,calc(100% - 24px));margin:22px auto;background:#fff;box-shadow:0 3px 24px #24304a22}.header{display:flex;justify-content:space-between;padding:34px 42px;border-bottom:4px solid var(--blue)}.header p{color:#555;margin:8px 0}.header em{color:var(--green)}.document-info{display:grid;gap:8px;text-align:right}.document-info label{display:flex;gap:10px;align-items:center;font-weight:700}.document-info input{width:150px}.hero{background:linear-gradient(110deg,var(--blue),#2734b8 60%,var(--green));color:#fff;padding:20px 42px;display:flex;justify-content:space-between}.section{margin:22px 34px;border:1px solid var(--line);border-radius:6px;overflow:hidden}.section h2{font-size:16px;margin:0;padding:12px 16px;color:#fff;background:var(--blue)}.section-body{padding:20px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.grid.three{grid-template-columns:repeat(3,1fr)}label{font-size:12px;font-weight:700;color:#465064;display:grid;gap:6px}.wide{grid-column:1/-1}input,select,textarea{width:100%;border:1px solid #bac2d0;border-radius:4px;padding:9px;font:inherit;color:#172033;background:#fff}textarea{min-height:80px;resize:vertical}.plan-placeholder,.empty{text-align:center;padding:24px;border:1px dashed #9da5b5;background:#f7f8fa;color:#687184}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;min-width:800px}th,td{border-bottom:1px solid var(--line);padding:8px;text-align:right}th{font-size:11px;color:#596375;background:#f4f6f9}th:nth-child(2),td:nth-child(2){text-align:left}
 /* Anchos del original: necesarios para que table-layout:fixed reparta bien en A4. */
-th:nth-child(1){width:5%}th:nth-child(2){width:36%}th:nth-child(3){width:12%}th:nth-child(4){width:11%}th:nth-child(5){width:15%}th:nth-child(6){width:15%}th:nth-child(7){width:6%}.delete{border:0;background:#a62828;color:#fff;border-radius:50%;font-size:18px}.add{margin-top:14px;background:var(--green)}.totals{margin-left:auto;width:min(100%,420px)}.totals p{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:8px}.totals .grand{font-size:22px;color:var(--blue);border-top:3px solid var(--blue)}.conditions{min-height:180px}.signatures{display:grid;grid-template-columns:1fr 1fr;gap:70px;margin-top:70px}.signatures span{text-align:center;border-top:1px solid;padding-top:8px;font-size:12px}footer{text-align:center;color:#fff;background:var(--blue);padding:20px;font-weight:700}footer small{display:block;margin-top:6px;font-weight:400}@media(max-width:720px){.toolbar,.header,.hero{align-items:stretch;flex-direction:column}.grid,.grid.three{grid-template-columns:1fr}.wide{grid-column:auto}.tank-options{grid-template-columns:1fr 1fr}.section{margin:14px}.header{padding:24px}.document-info{text-align:left}.document-info label{justify-content:space-between}}@media print{
+th:nth-child(1){width:5%}th:nth-child(2){width:36%}th:nth-child(3){width:12%}th:nth-child(4){width:11%}th:nth-child(5){width:15%}th:nth-child(6){width:15%}th:nth-child(7){width:6%}.delete{border:0;background:#a62828;color:#fff;border-radius:50%;font-size:18px}.add{margin-top:14px;background:var(--green)}.totals{margin-left:auto;width:min(100%,420px)}.totals p{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:8px}.totals .grand{font-size:22px;color:var(--blue);border-top:3px solid var(--blue)}.conditions{min-height:180px}.signatures{display:grid;grid-template-columns:1fr 1fr;gap:70px;margin-top:70px}.signatures span{text-align:center;border-top:1px solid;padding-top:8px;font-size:12px}footer{text-align:center;color:#fff;background:var(--blue);padding:20px;font-weight:700}footer small{display:block;margin-top:6px;font-weight:400}@media(max-width:720px){.toolbar,.header,.hero{align-items:stretch;flex-direction:column}.grid,.grid.three{grid-template-columns:1fr}.wide{grid-column:auto}.tank-options{grid-template-columns:1fr 1fr}.section{margin:14px}.header{padding:24px}.document-info{text-align:left}.document-info label{justify-content:space-between}}
+/* Errores de validación previos a imprimir. Van dentro de la interfaz, junto a
+   las acciones: un `alert` del navegador no se puede leer junto al formulario. */
+.print-errors{grid-column:1/-1;border:1.5px solid #a62828;background:#fdf3f3;border-radius:10px;padding:12px 14px;margin:0 0 12px;color:#8f2020}
+.print-errors p{display:flex;align-items:center;gap:8px;margin:0 0 8px;font-weight:700;font-size:14px}
+.print-errors ul{margin:0;padding-left:20px;font-size:13px;line-height:1.6}
+.print-errors b{font-weight:700}
+.tank-plan{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px}
+
+
+/* Secciones colapsables. El encabezado entero es el control: 48 px de alto,
+   foco visible y `aria-expanded` en el botón. */
+.section h2{padding:0!important;background:var(--blue)}
+.section-toggle{display:flex;align-items:center;gap:10px;width:100%;min-height:48px;padding:12px 16px;border:0;background:transparent;color:#fff;font:inherit;font-size:16px;font-weight:700;cursor:pointer;text-align:left}
+.section-title{flex:1}
+.section-caret{flex:0 0 auto;transition:transform .15s}
+.section-caret.is-closed{transform:rotate(-90deg)}
+.section-toggle:focus-visible{outline:3px solid var(--green);outline-offset:-3px}
+
+/* Seis capacidades: 3 x 2 en escritorio, 2 x 3 en móvil. Nunca cinco arriba y
+   una suelta abajo. */
+.tank-options{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.tank-options button{display:grid;gap:3px;place-items:center;min-height:60px;border:2px solid var(--violet);background:#fff;color:#404b91;border-radius:8px;padding:10px 6px;cursor:pointer;font:inherit}
+.tank-options button b{font-size:15px;font-weight:800}
+.tank-options button span{font-size:12px;opacity:.75}
+.tank-options .selected{background:var(--violet);color:#fff}
+.tank-options button:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+
+
+/* Movil: 2 x 3. Va despues de la regla base para ganarle por orden. */
+@media(max-width:720px){.tank-options{grid-template-columns:1fr 1fr}}
+.tank-detail{margin-top:14px;border:1px solid var(--line);border-left:4px solid var(--violet);border-radius:8px;padding:12px 14px;background:#f7f8fc}
+.tank-detail h3{margin:0 0 6px;font-size:16px;color:var(--blue)}
+.tank-detail h3 span{font-weight:400;color:#5b6577;font-size:14px}
+.tank-detail p{margin:0;font-size:14px;color:#4a5468;line-height:1.5}
+.tank-plan-state{margin-top:9px!important;font-size:13px;font-weight:700;color:#0a6b33}
+.tank-plan-state.is-pending{color:#8a5c07}
+
+/* Presets y aviso de valores de demostración. */
+.preset-bar{margin-bottom:12px}
+.preset-apply{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border:1.5px solid var(--violet);border-radius:10px;background:#fff;color:#404b91;font:inherit;font-size:14px;font-weight:700;cursor:pointer;text-align:left}
+.preset-apply:hover{background:#eceef8}
+.preset-apply:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+
+
+/* ── Plano técnico ─────────────────────────────────────────── */
+/* El SVG conserva su relación A4 apaisada (1400x990): ancho completo y alto
+   automático, sin recortes ni deformación. */
+.tank-plan-figure{margin:0}
+.tank-plan{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:#fff}
+.tank-plan-figure figcaption{display:grid;gap:5px;margin-top:10px;font-size:12px;color:#5b6577;line-height:1.5}
+.tank-plan-figure figcaption strong{color:var(--blue);font-size:13px}
+
+/* ── Aviso permanente de valores de demostración ───────────── */
+.demo-notice{display:flex;align-items:center;gap:9px;margin:14px 0 0;padding:11px 13px;border:1.5px solid #a8730a;border-radius:8px;background:#fff8e8;color:#7a5407;font-size:13px;font-weight:700;line-height:1.45}
+.demo-notice svg{flex:0 0 auto}
+
+/* ── Preset ────────────────────────────────────────────────── */
+.preset-apply span{display:grid;gap:2px;text-align:left}
+.preset-apply small{font-weight:600;opacity:.75;font-size:12px}
+
+/* ── Barra de acciones en teléfono ─────────────────────────── */
+.mobile-actions{
+  position:fixed;left:0;right:0;bottom:0;z-index:700;display:flex;gap:8px;
+  padding:10px 12px calc(10px + env(safe-area-inset-bottom));
+  background:#fff;border-top:1px solid var(--line);box-shadow:0 -3px 14px #24304a1f;
+}
+.mobile-actions button{flex:1;min-height:48px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--blue);font:inherit;font-size:14px;font-weight:700;cursor:pointer;padding:0 10px}
+.mobile-actions .ma-primary{flex:1.6;background:var(--green);border-color:var(--green);color:#fff}
+.mobile-actions button:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+/* Deja aire para que la barra no tape el final del formulario. */
+@media(max-width:767px){ body{padding-bottom:86px} }
+@media(min-width:768px){ .mobile-actions{display:none} }
+
+/* ── Materiales en teléfono: tarjetas ──────────────────────── */
+@media(max-width:720px){
+  .table-wrap{overflow:visible}
+  .materials-table{display:block;min-width:0;width:100%}
+  .materials-table thead{display:none}
+  .materials-table tbody{display:block}
+  .materials-table tr{
+    display:grid;grid-template-columns:1fr 1fr;gap:10px 12px;
+    border:1px solid var(--line);border-radius:10px;padding:12px;margin-bottom:10px;
+  }
+  .materials-table td{display:grid;gap:5px;border:0;padding:0;text-align:left;align-content:start}
+  .materials-table td::before{content:attr(data-label);font-size:11px;font-weight:700;letter-spacing:.3px;text-transform:uppercase;color:#596375}
+  .materials-table td.c-num{display:none}
+  .materials-table td.c-desc{grid-column:1/-1}
+  .materials-table td.c-sub{grid-column:1/-1;font-weight:800;color:var(--blue);font-size:17px}
+  .materials-table td.c-del{grid-column:1/-1}
+  .materials-table td.c-del::before{content:none}
+  .materials-table input{min-height:44px;font-size:16px;border-radius:8px}
+  .materials-table .delete{
+    width:100%;min-height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;gap:8px;
+    background:#fdf3f3;color:#a62828;border:1.5px solid #e3bcbc;font:inherit;font-weight:700;font-size:14px;
+  }
+  .materials-table .delete-text{display:inline}
+}
+@media(min-width:721px){ .materials-table .delete-text{display:none} }
+
+
+/* ── Logotipo de la portada ────────────────────────────────── */
+/* Imagen real, no texto. Alto fijo y ancho automático: conserva la proporción
+   700x198 del original en pantalla y en A4. */
+.logo{display:block;height:clamp(44px,8vw,58px);width:auto;max-width:100%}
+
+/* ── Ampliar plano ─────────────────────────────────────────── */
+.plan-zoom{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  min-height:44px;margin-top:12px;padding:0 18px;
+  border:1.5px solid var(--violet);border-radius:10px;background:#fff;
+  color:#404b91;font:inherit;font-size:15px;font-weight:700;text-decoration:none;
+}
+.plan-zoom:hover{background:#eceef8}
+.plan-zoom:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+
+/* ── Estado de materiales vacío en impresión ───────────────── */
+/* Sólo existe en el impreso: en pantalla la fila en blanco ya es visible y
+   editable, así que no hace falta un mensaje. */
+.materials-empty{display:none}
+
+/* ── Acciones: una sola barra por tamaño ───────────────────── */
+/* Por debajo de 768 px manda la barra inferior; la superior se oculta para no
+   duplicar las mismas acciones. */
+@media(max-width:767px){
+  .toolbar-actions{display:none}
+}
+
+@media print{
 @page{size:A4;margin:10mm}
 /* Sin print-color-adjust el navegador descarta los fondos decorativos y los
    textos en blanco (títulos de sección, hero, pie) quedan invisibles. */
 html,body{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .section h2,.hero,.header,th,footer{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 /* Controles internos: no forman parte del documento entregable. */
-.toolbar,.brand-stripe,.add,.delete{display:none!important}
+.toolbar,.brand-stripe,.add,.delete,.section-caret,.preset-bar{display:none!important}
+/* Las secciones cerradas en pantalla se imprimen abiertas: el documento sale completo. */
+.section-body[hidden]{display:block!important}
+.section-toggle{color:#fff!important;padding:12px 16px!important}
 .page{width:100%;margin:0;box-shadow:none}
 .section{break-inside:avoid;page-break-inside:avoid}
 .signatures{break-inside:avoid;page-break-inside:avoid}
@@ -18,6 +173,30 @@ table{table-layout:fixed!important;width:100%!important;min-width:0!important;fo
 th{font-size:8px;padding:5px 2px;word-break:break-word}
 td{padding:3px 2px}
 table input{width:100%!important;font-size:9px!important;padding:2px 3px!important}
+/* Controles que no forman parte del documento entregable. */
+.mobile-actions,.toolbar-actions,.materials-table td.c-del,.print-errors,.plan-zoom{display:none!important}
+/* Las filas que siguen intactas no se imprimen: no aportan nada al documento. */
+.materials-table tr.row-pristine{display:none!important}
+.materials-empty{display:table-row!important}
+.materials-empty td{text-align:center!important;font-style:italic;color:#596375;padding:12px 2px!important}
+.logo{-webkit-print-color-adjust:exact;print-color-adjust:exact;height:52px!important}
+body{padding-bottom:0!important}
+/* El ancho util de una A4 (~718px) cae por debajo del breakpoint movil de
+   720px: sin esto, la tabla de materiales se imprimiria como tarjetas. */
+.materials-table{display:table!important;table-layout:fixed!important;width:100%!important;min-width:0!important}
+.materials-table thead{display:table-header-group!important}
+.materials-table tbody{display:table-row-group!important}
+.materials-table tr{display:table-row!important;border:0!important;border-radius:0!important;padding:0!important;margin:0!important;gap:0!important}
+.materials-table td{display:table-cell!important;padding:3px 2px!important;border-bottom:1px solid var(--line)!important}
+.materials-table td::before{content:none!important}
+.materials-table td.c-num{display:table-cell!important}
+.materials-table td.c-sub{font-size:9.5px!important;color:inherit!important;font-weight:400!important}
+/* El plano entra completo en su pagina, sin partirse ni recortarse. */
+.tank-plan-figure{break-inside:avoid;page-break-inside:avoid;margin:0}
+.tank-plan{width:100%!important;height:auto!important;max-width:100%!important;border:1px solid #9aa3b2!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.tank-plan-figure figcaption{font-size:8.5px;color:#333}
+/* El aviso de valores ficticios tiene que verse en el impreso. */
+.demo-notice{-webkit-print-color-adjust:exact;print-color-adjust:exact;border:1.5px solid #a8730a!important;color:#7a5407!important;background:#fff8e8!important;font-size:10px;break-inside:avoid}
 /* El impreso es un documento, no un formulario. */
 input,select,textarea{border:none!important;background:transparent!important;padding:2px 3px!important}
 input[type=number]{text-align:right}

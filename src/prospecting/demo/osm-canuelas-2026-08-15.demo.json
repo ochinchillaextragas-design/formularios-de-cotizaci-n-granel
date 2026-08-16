@@ -1,0 +1,4396 @@
+{
+  "$schema_note": "Captura literal de una consulta real a la Overpass API de OpenStreetMap. NO contiene datos inventados.",
+  "capturedAt": "2026-08-15",
+  "source": "openstreetmap",
+  "sourceLicense": "ODbL 1.0 - (c) OpenStreetMap contributors",
+  "endpointUsed": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+  "endpointNote": "Mirror de Overpass. Sirve exactamente los mismos datos de OpenStreetMap que overpass-api.de; no es una base independiente.",
+  "center": {
+    "name": "Canuelas, Partido de Canuelas, Buenos Aires, Argentina",
+    "lat": -35.0540248,
+    "lon": -58.7617379
+  },
+  "geocodedWith": "https://nominatim.openstreetmap.org",
+  "radiusMeters": 35000,
+  "elementCount": 387,
+  "elements": [
+    {
+      "type": "node",
+      "id": 774076728,
+      "lat": -35.123905,
+      "lon": -58.894392,
+      "tags": {
+        "name": "La Posta de Uribe",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 774076730,
+      "lat": -35.115708,
+      "lon": -58.897923,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Macedonio"
+      }
+    },
+    {
+      "type": "node",
+      "id": 774076738,
+      "lat": -35.123734,
+      "lon": -58.892899,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "El Palenque"
+      }
+    },
+    {
+      "type": "node",
+      "id": 774092856,
+      "lat": -35.047322,
+      "lon": -58.769097,
+      "tags": {
+        "name": "Hotel Libertad ****",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 774092860,
+      "lat": -35.055701,
+      "lon": -58.757317,
+      "tags": {
+        "addr:city": "Cañuelas",
+        "addr:housenumber": "679",
+        "addr:postcode": "1814",
+        "addr:street": "Basavilbaso",
+        "name": "Hotel y Spa Cañuelas",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 774092865,
+      "lat": -35.047479,
+      "lon": -58.769357,
+      "tags": {
+        "name": "Los 5 Hermanos",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 997902999,
+      "lat": -35.031249,
+      "lon": -58.416391,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "El Chiquito"
+      }
+    },
+    {
+      "type": "node",
+      "id": 997970983,
+      "lat": -35.025706,
+      "lon": -58.42413,
+      "tags": {
+        "name": "Gundys Delicias",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 997970988,
+      "lat": -35.025486,
+      "lon": -58.422786,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Lo De Gra"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1095537320,
+      "lat": -34.998579,
+      "lon": -58.397157,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "La Estelita"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1584761318,
+      "lat": -34.929772,
+      "lon": -58.946692,
+      "tags": {
+        "addr:city": "General Las Heras",
+        "addr:housenumber": "1098",
+        "addr:postcode": "1741",
+        "addr:street": "25 de Mayo",
+        "building": "yes",
+        "name": "Hotel Santoro",
+        "phone": "+54 220 476 1141",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1630362320,
+      "lat": -34.926878,
+      "lon": -58.94757,
+      "tags": {
+        "addr:city": "General Las Heras",
+        "addr:housenumber": "917",
+        "addr:postcode": "1741",
+        "addr:street": "Narciso P. Lozano",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "pizza",
+        "name": "Cheff Empanadas & Pizza",
+        "phone": "+54 220 476 3756"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1953697013,
+      "lat": -34.859876,
+      "lon": -58.503504,
+      "tags": {
+        "name": "Plaza Central",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1953708492,
+      "lat": -34.856084,
+      "lon": -58.503304,
+      "tags": {
+        "addr:city": "Canning",
+        "addr:housenumber": "653",
+        "addr:postcode": "1804",
+        "addr:street": "Provincia de Formosa",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "cuisine": "coffee_shop",
+        "email": "info@starbucks.com.ar",
+        "name": "Starbucks",
+        "website": "https://www.starbucks.com.ar/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2009322452,
+      "lat": -35.185501,
+      "lon": -59.093918,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:housenumber": "45",
+        "addr:street": "Arturo Cardoner",
+        "email": "hotelpetit00@gmail.com",
+        "name": "Petit Hotel",
+        "phone": "+54 2227 43-1092",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2009322472,
+      "lat": -35.185016,
+      "lon": -59.09674,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:housenumber": "57",
+        "addr:street": "9 de Julio",
+        "amenity": "cafe",
+        "name": "El Escritorio",
+        "phone": "+54 2227 431161"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2009322543,
+      "lat": -35.186597,
+      "lon": -59.102818,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:housenumber": "77",
+        "addr:postcode": "7240",
+        "addr:street": "Junín",
+        "name": "Hotel Central Park",
+        "phone": "+54 2227 430165",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2009322613,
+      "lat": -35.188908,
+      "lon": -59.098456,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:housenumber": "319",
+        "addr:postcode": "B7240CKG",
+        "addr:street": "Presbítero José Albertini",
+        "amenity": "restaurant",
+        "contact:phone": "+54 2227 43 1108",
+        "name": "Restaurant La Pérgola"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2009442714,
+      "lat": -35.199547,
+      "lon": -59.096365,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "burger",
+        "name": "YPF Full"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2009442726,
+      "lat": -35.183835,
+      "lon": -59.108499,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Aquae Sulis Spa Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2009442736,
+      "lat": -35.183966,
+      "lon": -59.108456,
+      "tags": {
+        "name": "Aquae Sulis Spa Hotel",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2009442807,
+      "lat": -35.192819,
+      "lon": -59.097282,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:housenumber": "8",
+        "addr:postcode": "B7240KJB",
+        "addr:street": "Patagones",
+        "amenity": "restaurant",
+        "contact:website": "http://www.refugioellupo.com.ar/",
+        "cuisine": "italian;regional",
+        "name": "El Refugio del Lupo",
+        "opening_hours": "Mo 12:30-15:00,20:30-24:00; Th 20:30-24:00; Fr-Su 00:00-01:00,12:30-15:00,20:30-24:00",
+        "phone": "+54 2227 42 2829; +54 2227 44 1834",
+        "website": "https://www.instagram.com/elrefugiodellupo/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2009442816,
+      "lat": -35.197097,
+      "lon": -59.096106,
+      "tags": {
+        "addr:city": "Lobos",
+        "amenity": "restaurant",
+        "cuisine": "international",
+        "name": "Bodegón Don Juan",
+        "phone": "+54 9 2227 53 9260"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2012769820,
+      "lat": -35.185897,
+      "lon": -59.097435,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Club Social"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2012769822,
+      "lat": -35.184814,
+      "lon": -59.073611,
+      "tags": {
+        "name": "Complejo Bohio",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2269732786,
+      "lat": -34.926356,
+      "lon": -58.962109,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Parrilla el curvón"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2269732787,
+      "lat": -34.922883,
+      "lon": -58.958465,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Parrilla el Vasco"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2533616875,
+      "lat": -34.931103,
+      "lon": -58.945847,
+      "tags": {
+        "name": "Hogar de la tercera edad",
+        "tourism": "guest_house"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2537476731,
+      "lat": -35.177072,
+      "lon": -59.064417,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:housenumber": "2597",
+        "addr:postcode": "B7240GBG",
+        "addr:street": "Avenida Presidente Hipólito Yrigoyen",
+        "amenity": "restaurant",
+        "contact:phone": "+54 2227 42 4615",
+        "cuisine": "international",
+        "name": "Restaurante El Candil"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2555062216,
+      "lat": -35.119107,
+      "lon": -58.898018,
+      "tags": {
+        "addr:city": "Uribelarrea",
+        "addr:housenumber": "238",
+        "addr:postcode": "B1815AOF",
+        "addr:street": "Don Bosco Santo",
+        "amenity": "restaurant",
+        "contact:phone": "+54 2226 49 3032",
+        "contact:website": "https://www.facebook.com/lafriulana.enuribe",
+        "cuisine": "italian",
+        "name": "La Friulana"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2595743215,
+      "lat": -35.029438,
+      "lon": -58.747821,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "steak_house",
+        "name": "Parrilla La Dominga"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2649889816,
+      "lat": -35.18282,
+      "lon": -59.095098,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:housenumber": "335",
+        "addr:postcode": "B7240AMG",
+        "addr:street": "Ayacucho",
+        "name": "Panadería Gagiotti",
+        "phone": "+54 2227 42 1777",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2649921530,
+      "lat": -35.184687,
+      "lon": -59.097222,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:housenumber": "131",
+        "addr:postcode": "B7240ACC",
+        "addr:street": "Buenos Aires",
+        "name": "Panadería Los Girasoles",
+        "opening_hours": "Mo-Su 06:00-22:00",
+        "phone": "+54 2227 43-1756",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2667242231,
+      "lat": -35.185733,
+      "lon": -59.099724,
+      "tags": {
+        "amenity": "restaurant",
+        "contact:phone": "+54 2227 42 3907",
+        "cuisine": "international",
+        "name": "La Boquería"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2678884691,
+      "lat": -34.812806,
+      "lon": -58.539257,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Tango Bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2852136697,
+      "lat": -35.13344,
+      "lon": -58.876063,
+      "tags": {
+        "name": "Salón de ventas",
+        "shop": "farm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3658821279,
+      "lat": -34.928046,
+      "lon": -58.944105,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "burger;regional;sandwich",
+        "name": "Matute",
+        "phone": "+54 220 476 3956"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3662448186,
+      "lat": -35.024056,
+      "lon": -58.424024,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Clock"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3670196932,
+      "lat": -35.023518,
+      "lon": -58.424628,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "El Establo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3688476037,
+      "lat": -35.037596,
+      "lon": -58.757349,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Parrilla la Huerta"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3688476038,
+      "lat": -35.036994,
+      "lon": -58.757857,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Parrilla La Querencia"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3688476039,
+      "lat": -35.035312,
+      "lon": -58.755766,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Parrilla"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3688496713,
+      "lat": -35.041793,
+      "lon": -58.762189,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "La Parrilla"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3688526890,
+      "lat": -35.051043,
+      "lon": -58.764767,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Parrilla La Escuela"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3688541667,
+      "lat": -35.052415,
+      "lon": -58.76278,
+      "tags": {
+        "name": "La Estrella",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3688541668,
+      "lat": -35.052665,
+      "lon": -58.762787,
+      "tags": {
+        "name": "San Agustín",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3688541669,
+      "lat": -35.053162,
+      "lon": -58.762159,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hueney"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3688541670,
+      "lat": -35.053182,
+      "lon": -58.761951,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Scilla"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3688541673,
+      "lat": -35.054073,
+      "lon": -58.762529,
+      "tags": {
+        "addr:city": "Cañuelas",
+        "addr:housenumber": "870",
+        "addr:postcode": "1814",
+        "addr:street": "Lara",
+        "amenity": "restaurant",
+        "name": "Pizzeria Punto y Banca"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3688551343,
+      "lat": -35.055002,
+      "lon": -58.759836,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Praliné"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3688551345,
+      "lat": -35.055234,
+      "lon": -58.76011,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Doña Julia Pastas Caseras"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3688566325,
+      "lat": -35.056312,
+      "lon": -58.758228,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Pessego"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3722217877,
+      "lat": -35.03126,
+      "lon": -58.750253,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "steak_house",
+        "name": "Parrilla Lo de Beto"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3722217878,
+      "lat": -35.028667,
+      "lon": -58.748868,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Don Santiago"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3724109317,
+      "lat": -35.056556,
+      "lon": -58.778267,
+      "tags": {
+        "name": "Hotel Feeling",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3759802097,
+      "lat": -34.84841,
+      "lon": -58.514036,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Parrilla"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3762060877,
+      "lat": -35.116631,
+      "lon": -58.899015,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Parrilla El Argentino"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3762060878,
+      "lat": -35.115915,
+      "lon": -58.898192,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "La Casona de Cacho"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3762060880,
+      "lat": -35.117207,
+      "lon": -58.896577,
+      "tags": {
+        "name": "Deja Vu",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3762060882,
+      "lat": -35.122383,
+      "lon": -58.891683,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Parrilla la Escondida"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3763299946,
+      "lat": -34.840438,
+      "lon": -58.507425,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "steak_house",
+        "description": "Tenedor libre",
+        "name": "Parrilla Grimaldi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3763301160,
+      "lat": -34.852268,
+      "lon": -58.521771,
+      "tags": {
+        "addr:street": "French",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "La Estacion de O'Higgins"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3763301161,
+      "lat": -34.852384,
+      "lon": -58.521547,
+      "tags": {
+        "addr:street": "French",
+        "amenity": "cafe",
+        "name": "MSK"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3858127075,
+      "lat": -34.842774,
+      "lon": -58.507648,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "steak_house",
+        "name": "Parrilla"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3881307157,
+      "lat": -35.026415,
+      "lon": -58.43235,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Parrilla"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3882073673,
+      "lat": -34.91051,
+      "lon": -58.593046,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Pizzeria"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3910177156,
+      "lat": -34.878167,
+      "lon": -58.58462,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Parrilla"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3921100510,
+      "lat": -34.851393,
+      "lon": -58.504361,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Parrilla"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3952912234,
+      "lat": -35.124071,
+      "lon": -58.888201,
+      "tags": {
+        "amenity": "cafe",
+        "name": "La Pulperia Mate Bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3952912236,
+      "lat": -35.117886,
+      "lon": -58.895665,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Pueblo Escondido"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3952912237,
+      "lat": -35.038105,
+      "lon": -58.75795,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Rogelia"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3954507920,
+      "lat": -35.11751,
+      "lon": -58.896155,
+      "tags": {
+        "amenity": "cafe",
+        "name": "De Tisanas y otras Hebras"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4099641465,
+      "lat": -35.053179,
+      "lon": -58.762047,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Hueney"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4099641466,
+      "lat": -35.053192,
+      "lon": -58.761939,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Scilla"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4178308096,
+      "lat": -35.020724,
+      "lon": -58.749556,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Parrilla Parador 36"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4346245351,
+      "lat": -34.763581,
+      "lon": -58.61907,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Burger King",
+        "cuisine": "burger",
+        "name": "Burger King"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4346245352,
+      "lat": -34.763532,
+      "lon": -58.619124,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "burger",
+        "name": "Mostaza"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4346245353,
+      "lat": -34.763486,
+      "lon": -58.61918,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Subway",
+        "cuisine": "sandwich",
+        "name": "Subway"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4346245354,
+      "lat": -34.763429,
+      "lon": -58.619258,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Pizzeria Crocatta"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4346245355,
+      "lat": -34.763341,
+      "lon": -58.619374,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Balcarce"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4346245356,
+      "lat": -34.763389,
+      "lon": -58.61932,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Gourmet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4367899819,
+      "lat": -35.303282,
+      "lon": -58.595558,
+      "tags": {
+        "man_made": "works",
+        "name": "Lácteos Mayol",
+        "operator": "Ernesto Mayol S.A",
+        "website": "https://es-la.facebook.com/lacteosmayol/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4373674858,
+      "lat": -35.051822,
+      "lon": -58.76514,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Pizzeria El Establo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4373674861,
+      "lat": -35.056129,
+      "lon": -58.760126,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Parrilla La Verdulería"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4373674862,
+      "lat": -35.05556,
+      "lon": -58.760542,
+      "tags": {
+        "name": "Emmanuel",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4373674863,
+      "lat": -35.055449,
+      "lon": -58.76094,
+      "tags": {
+        "addr:city": "Cañuelas",
+        "addr:housenumber": "638",
+        "addr:postcode": "1814",
+        "addr:street": "Lara",
+        "amenity": "restaurant",
+        "name": "ARA Cocina al disco"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4376613654,
+      "lat": -34.780951,
+      "lon": -58.837537,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Bayres"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4393301493,
+      "lat": -34.832566,
+      "lon": -58.569819,
+      "tags": {
+        "man_made": "works",
+        "name": "CONUAR"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4418387820,
+      "lat": -35.123578,
+      "lon": -58.889662,
+      "tags": {
+        "name": "Como Entonces",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4418387827,
+      "lat": -35.115773,
+      "lon": -58.897859,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Leonardo Ristorante"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4426810968,
+      "lat": -35.12285,
+      "lon": -58.889135,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "La Uribeña"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4426810969,
+      "lat": -35.124945,
+      "lon": -58.891168,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "El Principio"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4491537489,
+      "lat": -34.88259,
+      "lon": -58.59545,
+      "tags": {
+        "man_made": "works",
+        "name": "Servifrio"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4551165312,
+      "lat": -34.852062,
+      "lon": -58.521929,
+      "tags": {
+        "addr:street": "French",
+        "amenity": "restaurant",
+        "name": "El Club del Sandwich"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4551334498,
+      "lat": -34.854488,
+      "lon": -58.52305,
+      "tags": {
+        "addr:street": "Avenida Presidente Néstor Carlos Kirchner",
+        "amenity": "restaurant",
+        "name": "Juanito"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4551338459,
+      "lat": -34.855277,
+      "lon": -58.524072,
+      "tags": {
+        "addr:street": "Avenida Presidente Néstor Carlos Kirchner",
+        "amenity": "restaurant",
+        "name": "Coma Mas Pollo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4565546913,
+      "lat": -34.891205,
+      "lon": -58.569224,
+      "tags": {
+        "addr:city": "Tristán Suárez",
+        "addr:street": "Avenida Presidente Néstor Carlos Kirchner",
+        "amenity": "restaurant",
+        "name": "Fábrica de Pizzas"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4565758096,
+      "lat": -34.9044,
+      "lon": -58.578682,
+      "tags": {
+        "addr:street": "Avenida de la Plata",
+        "name": "Dulce Cereza",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4620980931,
+      "lat": -34.848881,
+      "lon": -58.524266,
+      "tags": {
+        "addr:street": "French",
+        "amenity": "restaurant",
+        "name": "Brulla Pizza 3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4621257262,
+      "lat": -34.855015,
+      "lon": -58.502561,
+      "tags": {
+        "addr:street": "Avenida Mariano Castex",
+        "amenity": "restaurant",
+        "cuisine": "grill",
+        "name": "La Carrocita"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4621294644,
+      "lat": -34.83322,
+      "lon": -58.495222,
+      "tags": {
+        "addr:street": "Dardo Rocha",
+        "name": "La Principal",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4625670524,
+      "lat": -34.85118,
+      "lon": -58.504468,
+      "tags": {
+        "addr:street": "Avenida Mariano Castex",
+        "amenity": "restaurant",
+        "name": "La Casa de los Juegos"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4625676262,
+      "lat": -34.859922,
+      "lon": -58.503149,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Burger King",
+        "cuisine": "burger",
+        "name": "Burger King"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5011972884,
+      "lat": -34.885356,
+      "lon": -58.505777,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Subway",
+        "cuisine": "sandwich",
+        "name": "Subway"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5112003051,
+      "lat": -35.061764,
+      "lon": -58.809337,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Parrilla El Búho"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5112003052,
+      "lat": -35.063064,
+      "lon": -58.814549,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Restaurante El Encuentro"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5129073134,
+      "lat": -35.030501,
+      "lon": -58.749108,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Parrilla Bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5160841401,
+      "lat": -35.034521,
+      "lon": -58.733263,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional;grill;pasta",
+        "name": "Parrilla Lo del Gitano"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5171998532,
+      "lat": -35.188078,
+      "lon": -59.074782,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "La Casona de Angelito"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5182474353,
+      "lat": -35.022354,
+      "lon": -58.420598,
+      "tags": {
+        "name": "El Boulevard",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5264211786,
+      "lat": -34.928297,
+      "lon": -58.947334,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "La Casona"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5402644843,
+      "lat": -34.873986,
+      "lon": -58.486808,
+      "tags": {
+        "addr:street": "Los Tulipanes",
+        "amenity": "restaurant",
+        "name": "Venado 1 Restaurante"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5630889504,
+      "lat": -34.886507,
+      "lon": -58.535524,
+      "tags": {
+        "name": "Alba",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5646856521,
+      "lat": -34.782033,
+      "lon": -58.838375,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza;burger",
+        "name": "Pizzería Greek"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5646857299,
+      "lat": -34.781868,
+      "lon": -58.838242,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Aibar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5668160122,
+      "lat": -34.773744,
+      "lon": -58.621678,
+      "tags": {
+        "addr:housenumber": "15549",
+        "addr:postcode": "1759",
+        "addr:street": "Avenida Brigadier General Juan Manuel de Rosas",
+        "email": "amigogallego@hotmail.com.ar",
+        "name": "Mi propiedad",
+        "operator": "movistar",
+        "phone": "+54 11 6290-9833",
+        "tourism": "apartment"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5696529023,
+      "lat": -34.855949,
+      "lon": -58.503711,
+      "tags": {
+        "addr:city": "Canning",
+        "addr:housenumber": "653",
+        "addr:postcode": "1804",
+        "addr:street": "Provincia de Formosa",
+        "amenity": "cafe",
+        "brand": "Café Martínez",
+        "cuisine": "coffee_shop",
+        "email": "lastoscas@cafemartinez.com.ar",
+        "name": "Café Martínez",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "phone": "+54 11 4295-9911",
+        "website": "https://www.cafemartinez.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5737807684,
+      "lat": -35.03181,
+      "lon": -58.417359,
+      "tags": {
+        "name": "La Nueva",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5737807687,
+      "lat": -35.027813,
+      "lon": -58.420398,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "La Nueva Maruja"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5737807688,
+      "lat": -35.026603,
+      "lon": -58.423727,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "La Del Boulevard"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5737807695,
+      "lat": -35.023284,
+      "lon": -58.424671,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "El Zamorano"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5737807696,
+      "lat": -35.023719,
+      "lon": -58.424314,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Mc Fly"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5739888718,
+      "lat": -35.022388,
+      "lon": -58.420664,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Pizzandrea"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5739888719,
+      "lat": -35.022058,
+      "lon": -58.420057,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "La Nona"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5739888720,
+      "lat": -35.023841,
+      "lon": -58.421495,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "San Vicente Central"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5739963374,
+      "lat": -34.833579,
+      "lon": -58.495764,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "El Café de los Maestros"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5739963379,
+      "lat": -34.832665,
+      "lon": -58.494262,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "La Previa"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5739963380,
+      "lat": -34.842162,
+      "lon": -58.487386,
+      "tags": {
+        "name": "Arco Iris",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5739963387,
+      "lat": -34.83787,
+      "lon": -58.4905,
+      "tags": {
+        "name": "Azucar Morena",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5739963401,
+      "lat": -34.835396,
+      "lon": -58.493322,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "El Negro Felix"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5797562548,
+      "lat": -34.887975,
+      "lon": -58.597719,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Rincon Criollo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6001170124,
+      "lat": -34.815213,
+      "lon": -58.540466,
+      "tags": {
+        "addr:city": "Ezeiza",
+        "addr:postcode": "1802",
+        "addr:street": "Autopista Teniente General Pablo Ricchieri",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "cuisine": "coffee_shop",
+        "email": "info@starbucks.com.ar",
+        "name": "Starbucks",
+        "opening_hours": "Mo-Su 06:00-22:30",
+        "website": "https://www.starbucks.com.ar/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6024259485,
+      "lat": -34.815917,
+      "lon": -58.54176,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Florida Garden"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6171870185,
+      "lat": -35.121257,
+      "lon": -58.895376,
+      "tags": {
+        "addr:housenumber": "500",
+        "addr:street": "Don Bosco Santo",
+        "amenity": "restaurant",
+        "name": "Pueblo Escondido",
+        "opening_hours": "Su, We-Th 09:00-19:00; Fr-Sa 09:00-00:00",
+        "phone": "+54 9 11 5625-5080"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6173327156,
+      "lat": -34.882478,
+      "lon": -58.558231,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Cofee Time"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6173327157,
+      "lat": -34.882448,
+      "lon": -58.558198,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Betos"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6173327158,
+      "lat": -34.882425,
+      "lon": -58.558166,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Subway",
+        "cuisine": "sandwich",
+        "name": "Subway"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6174778386,
+      "lat": -34.813332,
+      "lon": -58.539294,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "cuisine": "burger",
+        "name": "McDonald's"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6217533561,
+      "lat": -34.855713,
+      "lon": -58.541215,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "pizza",
+        "name": "Pizzeria La Familia"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6217533562,
+      "lat": -34.85591,
+      "lon": -58.541104,
+      "tags": {
+        "name": "Mi Crecer",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6217533567,
+      "lat": -34.857858,
+      "lon": -58.53952,
+      "tags": {
+        "name": "La Coruña",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6217533584,
+      "lat": -34.864056,
+      "lon": -58.540523,
+      "tags": {
+        "name": "Carlitos",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6217533885,
+      "lat": -34.864575,
+      "lon": -58.541647,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "pizza",
+        "name": "Pizzeria Los Hermanos"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6217533886,
+      "lat": -34.864872,
+      "lon": -58.542237,
+      "tags": {
+        "name": "Beto",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6217533889,
+      "lat": -34.86568,
+      "lon": -58.542523,
+      "tags": {
+        "amenity": "car_wash",
+        "name": "Lavadero"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6358991337,
+      "lat": -34.7818,
+      "lon": -58.836826,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Berlin"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6358991338,
+      "lat": -34.78162,
+      "lon": -58.838053,
+      "tags": {
+        "name": "La Nueva Roma",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6460778644,
+      "lat": -34.831535,
+      "lon": -58.492772,
+      "tags": {
+        "amenity": "car_wash",
+        "name": "Lavadero"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6668280300,
+      "lat": -35.190604,
+      "lon": -59.099449,
+      "tags": {
+        "name": "La Plaza",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6865193659,
+      "lat": -35.088782,
+      "lon": -58.734787,
+      "tags": {
+        "name": "Daily Suites Hotel Boutique",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6990998863,
+      "lat": -34.84804,
+      "lon": -58.505874,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "cuisine": "burger",
+        "name": "McDonald's"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7058802704,
+      "lat": -34.929963,
+      "lon": -58.955829,
+      "tags": {
+        "amenity": "car_wash",
+        "name": "Lavadero Colón",
+        "opening_hours": "Mo-Sa 08:00-18:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8627268107,
+      "lat": -35.04957,
+      "lon": -58.731,
+      "tags": {
+        "craft": "distillery",
+        "name": "Fevesa"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8660767719,
+      "lat": -34.787114,
+      "lon": -58.835232,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Shell"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9222047014,
+      "lat": -35.184133,
+      "lon": -59.09748,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Sattva",
+        "opening_hours": "Mo-Sa 11:00-15:00,20:00-23:00; Su 11:00-15:00",
+        "phone": "+54 9 11 2187-8503",
+        "website": "https://www.sattva.com.ar/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9222461433,
+      "lat": -35.17795,
+      "lon": -59.097598,
+      "tags": {
+        "name": "Las delicias",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9230559419,
+      "lat": -35.180451,
+      "lon": -59.09733,
+      "tags": {
+        "name": "La Moderna",
+        "opening_hours": "Tu-Sa 08:00-13:00,16:30-19:30; Su 08:00-13:00",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9230559420,
+      "lat": -35.180886,
+      "lon": -59.097294,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "grill",
+        "name": "Parrilla Palermo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9231357817,
+      "lat": -35.187604,
+      "lon": -59.093873,
+      "tags": {
+        "name": "Los Amigos",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9233282155,
+      "lat": -35.181374,
+      "lon": -59.098241,
+      "tags": {
+        "name": "El Sauzal Del Valle",
+        "opening_hours": "Mo-Sa 07:30-13:00,16:00-19:00; Su 07:30-13:30",
+        "phone": "+54 2227 59-4906",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9247225851,
+      "lat": -35.189249,
+      "lon": -59.100582,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Pizzeria De Locos",
+        "opening_hours": "PH,We-Su 19:00-23:00",
+        "phone": "+54 2227 42-4763"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9247300794,
+      "lat": -35.186692,
+      "lon": -59.093897,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Lo De Moni"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9250900349,
+      "lat": -35.179141,
+      "lon": -59.092723,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:housenumber": "410",
+        "addr:street": "Olavarrieta",
+        "amenity": "fast_food",
+        "name": "Morfi",
+        "opening_hours": "Tu-Su 09:00-14:00, 18:00-23:00",
+        "phone": "+54 2227 43-2525",
+        "website": "https://l.facebook.com/l.php?u=http%3A%2F%2Fwww.morfilobos.com.ar%2F&h=AT34hSv3_OmKN_CfMK0fYiPFng0t_561Qn0j4PCkBO_RHjhk1KfixMfIP6ka6CFES6SNMdLLcGqYgU3OTIgeCxIbQtRZJ4Qvyry-aIRK-_Hbpd-6FPzXvs0kEzZfaXAVaWNvsoDEtrtbMYtcz3L_561rMuHcsKnDJ6w6zw"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9251164603,
+      "lat": -35.185743,
+      "lon": -59.099102,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:housenumber": "169",
+        "addr:street": "José Salgado Oeste",
+        "name": "Aries Moscoloni",
+        "phone": "+54 2227 421097",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9254553004,
+      "lat": -35.186825,
+      "lon": -59.099154,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:housenumber": "168",
+        "addr:street": "General San Martín",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "La Lobeña",
+        "phone": "+54 2227 42-2034",
+        "website": "https://es-la.facebook.com/Lobos.La.Lobena/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9258654555,
+      "lat": -35.183127,
+      "lon": -59.099522,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:housenumber": "195",
+        "addr:street": "Almafuerte",
+        "amenity": "fast_food",
+        "cuisine": "regional;pizza",
+        "name": "La Picassa"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9268731665,
+      "lat": -35.183885,
+      "lon": -59.094355,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:housenumber": "292",
+        "addr:street": "Hiriart",
+        "amenity": "restaurant",
+        "cuisine": "pizza;burger;regional",
+        "name": "The God Of Burger",
+        "phone": "+54 1 6556-3810;+54 11 5465-3869"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9269957381,
+      "lat": -35.18667,
+      "lon": -59.100201,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:housenumber": "261",
+        "addr:street": "General San Martín",
+        "amenity": "cafe",
+        "cuisine": "breakfast;snacks;coffee_shop;bakery",
+        "email": "Dulcisimo.at@gmail.com",
+        "name": "Dulcisimo y Saladisimo",
+        "opening_hours": "We-Fr 08:30-12:30,16:00-19:00; Sa 08:30-12:30,16:00-19:00; Su 15:00-18:00",
+        "phone": "+54 9 2227 46 4127",
+        "website": "https://www.masdulcisimo.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9283834454,
+      "lat": -35.184198,
+      "lon": -59.101753,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Sabores",
+        "phone": "+542227430695"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9288854129,
+      "lat": -35.179379,
+      "lon": -59.095404,
+      "tags": {
+        "name": "Los Amigos",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9288911176,
+      "lat": -35.179755,
+      "lon": -59.095411,
+      "tags": {
+        "addr:housenumber": "650",
+        "addr:street": "Ayacucho",
+        "amenity": "fast_food",
+        "cuisine": "pizza;regional",
+        "name": "Don Vittorio",
+        "phone": "+54 2227 43-0990"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9289167400,
+      "lat": -35.184803,
+      "lon": -59.096132,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "burger",
+        "name": "El Clasico",
+        "phone": "+54 9 2227 53 2337; +54 2227 56 2337"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9290869881,
+      "lat": -35.184125,
+      "lon": -59.097214,
+      "tags": {
+        "addr:city": "Lobos",
+        "amenity": "cafe",
+        "brand": "Bonafide",
+        "cuisine": "coffee_shop",
+        "name": "Bonafide",
+        "opening_hours": "Mo-Sa 08:30-12:30,15:30-19:00",
+        "phone": "+54 2227 431 638"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9294802697,
+      "lat": -35.184134,
+      "lon": -59.097626,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:housenumber": "10",
+        "addr:street": "Suipacha",
+        "amenity": "restaurant",
+        "cuisine": "burger",
+        "name": "Hipolito's",
+        "phone": "+54 2227 59-8688",
+        "website": "https://hipolitosburgers.ola.click/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9309047946,
+      "lat": -35.184931,
+      "lon": -59.094356,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:housenumber": "285",
+        "addr:street": "9 de Julio",
+        "name": "El Sauzal",
+        "phone": "+54 2227 43-2306",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9309347165,
+      "lat": -35.184007,
+      "lon": -59.101779,
+      "tags": {
+        "name": "Panificadora San Carlos",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9309347166,
+      "lat": -35.185914,
+      "lon": -59.098945,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:housenumber": "154",
+        "addr:street": "José Salgado Oeste",
+        "amenity": "fast_food",
+        "cuisine": "pizza",
+        "name": "Bella Pizza",
+        "phone": "+54 2227 43-2552"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9351375140,
+      "lat": -35.173064,
+      "lon": -59.09526,
+      "tags": {
+        "name": "El Sauzal",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9354204723,
+      "lat": -35.18472,
+      "lon": -59.094195,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "La Campiña"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9538763649,
+      "lat": -34.912078,
+      "lon": -58.591856,
+      "tags": {
+        "name": "La Principal",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9581869121,
+      "lat": -34.983515,
+      "lon": -58.683324,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Las Rejas"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9621138773,
+      "lat": -34.850146,
+      "lon": -58.503906,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Parador Atalaya"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9655173008,
+      "lat": -35.184791,
+      "lon": -59.095421,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "sandwich",
+        "name": "Azul",
+        "opening_hours": "Mo-Su 10:00-14:00,17:00-21:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9705377829,
+      "lat": -35.147326,
+      "lon": -59.084228,
+      "tags": {
+        "name": "La Ideal",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9797569457,
+      "lat": -34.946027,
+      "lon": -58.65824,
+      "tags": {
+        "amenity": "restaurant",
+        "contact:email": "parrillaelcampito@hotmail.com",
+        "contact:phone": "+54 9 2226 48 6900",
+        "cuisine": "argentinian",
+        "name": "Parrilla El Campito"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9800883432,
+      "lat": -34.887391,
+      "lon": -58.580665,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Confitería"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9821362203,
+      "lat": -35.185121,
+      "lon": -59.095325,
+      "tags": {
+        "addr:street": "Ayacucho",
+        "name": "Lavanderia tintoreria",
+        "shop": "laundry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9831109970,
+      "lat": -35.182169,
+      "lon": -59.097263,
+      "tags": {
+        "addr:city": "Lobos",
+        "amenity": "restaurant",
+        "name": "El Club De Las Empanadas",
+        "phone": "+54 2227 42-4278"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9904417317,
+      "lat": -35.159816,
+      "lon": -59.094454,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:housenumber": "2685",
+        "addr:street": "Arturo Cardoner",
+        "email": "lorenzettifabian@gmail.com",
+        "name": "Altos de empalme",
+        "phone": "+54 0223 1530 2174",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9904417318,
+      "lat": -35.1881,
+      "lon": -59.108414,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:housenumber": "261",
+        "addr:street": "Independencia",
+        "email": "info@ayresdelparque.com.ar",
+        "name": "Ayres del parque",
+        "phone": "+54 9 2227 55-8072",
+        "tourism": "hotel",
+        "website": "https://ayresdelparquelobos.com.ar/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9904417319,
+      "lat": -35.179408,
+      "lon": -59.069094,
+      "tags": {
+        "addr:street": "244",
+        "email": "silenzioalquilerlobos@gmail.com",
+        "name": "Silenzio Stampa",
+        "phone": "+54 11 6886 5296",
+        "tourism": "hotel",
+        "website": "https://silenziostampalobos.ar/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9982560119,
+      "lat": -35.185372,
+      "lon": -59.0972,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:street": "Buenos Aires",
+        "amenity": "restaurant",
+        "cuisine": "coffee_shop;snacks;ice_cream;international",
+        "name": "Santo Pan"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9996081560,
+      "lat": -34.813122,
+      "lon": -58.539969,
+      "tags": {
+        "amenity": "restaurant",
+        "brand": "Outback Steakhouse",
+        "cuisine": "american;steak",
+        "name": "Outback Steakhouse"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9996081561,
+      "lat": -34.815402,
+      "lon": -58.540689,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "cuisine": "burger",
+        "name": "McDonald's"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9996081562,
+      "lat": -34.815816,
+      "lon": -58.540837,
+      "tags": {
+        "brand": "Brioche Dorée",
+        "name": "Brioche Dorée",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9996081566,
+      "lat": -34.813994,
+      "lon": -58.53889,
+      "tags": {
+        "amenity": "restaurant",
+        "brand": "Outback Steakhouse",
+        "cuisine": "american;steak",
+        "name": "Outback Steakhouse"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10008798400,
+      "lat": -34.813246,
+      "lon": -58.54074,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Fausto"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10008798401,
+      "lat": -34.813393,
+      "lon": -58.540134,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Havanna",
+        "cuisine": "coffee_shop",
+        "name": "Havanna"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10035054717,
+      "lat": -35.192472,
+      "lon": -59.09722,
+      "tags": {
+        "name": "El sauzal",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10049446022,
+      "lat": -35.183098,
+      "lon": -59.098272,
+      "tags": {
+        "addr:city": "Lobos",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Tattoi",
+        "opening_hours": "Mo-Sa 11:00-14:30",
+        "phone": "+54 2227 583882"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10075881503,
+      "lat": -35.170862,
+      "lon": -59.094232,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:housenumber": "1571",
+        "addr:street": "Arturo Cardoner",
+        "name": "Dulces Delicias",
+        "opening_hours": "Mo-Sa 08:00-13:00,16:30-21:00; Su 08:00-13:00,16:30-20:00",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10080730674,
+      "lat": -35.194777,
+      "lon": -59.09101,
+      "tags": {
+        "name": "La Artesanal",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10096133298,
+      "lat": -35.17583,
+      "lon": -59.095504,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:street": "Ayacucho",
+        "name": "Biló",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10537844290,
+      "lat": -34.926373,
+      "lon": -58.947307,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Clap"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10564901328,
+      "lat": -35.166876,
+      "lon": -59.09205,
+      "tags": {
+        "name": "La Imperial",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10671609445,
+      "lat": -34.919221,
+      "lon": -58.956514,
+      "tags": {
+        "addr:city": "General Las Heras",
+        "addr:housenumber": "km 67",
+        "addr:postcode": "1741",
+        "addr:street": "Avenida Presidente Juan Domingo Perón",
+        "man_made": "works",
+        "name": "La Dolce SRL",
+        "operator": "Mondeléz",
+        "product": "candies"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10686838059,
+      "lat": -34.909192,
+      "lon": -58.942022,
+      "tags": {
+        "man_made": "works",
+        "name": "Megafund S.A."
+      }
+    },
+    {
+      "type": "node",
+      "id": 11053155919,
+      "lat": -35.036397,
+      "lon": -58.406891,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "gordichis"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11240921519,
+      "lat": -34.909162,
+      "lon": -58.595051,
+      "tags": {
+        "addr:city": "Carlos Spegazzini",
+        "addr:housenumber": "6490",
+        "addr:street": "Avenida Presidente Néstor Carlos Kirchner",
+        "man_made": "works",
+        "name": "Ezeta",
+        "phone": "+54 11 77000011",
+        "website": "https://ezeta.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11673403488,
+      "lat": -34.78195,
+      "lon": -58.839239,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Bonafide",
+        "cuisine": "coffee_shop",
+        "name": "Bonafide"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11673403497,
+      "lat": -34.784058,
+      "lon": -58.838202,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "Seiki Sushi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11794169104,
+      "lat": -34.850727,
+      "lon": -59.054212,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "argentinian",
+        "name": "Restaurante Argentino '' La Tacuara ''",
+        "phone": "+54 11 2652 4001",
+        "website": "https://www.instagram.com/la_tacuara.lozano"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11815388373,
+      "lat": -35.053969,
+      "lon": -58.762831,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "La Sede"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11817010454,
+      "lat": -35.042615,
+      "lon": -58.765559,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Atalaya"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11959347653,
+      "lat": -35.055863,
+      "lon": -58.757301,
+      "tags": {
+        "name": "Hotel y Spa Cañuelas",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11991183631,
+      "lat": -34.851736,
+      "lon": -58.522167,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Natale"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12040199302,
+      "lat": -35.02032,
+      "lon": -58.416935,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Nuevo Tío Pipo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12106679618,
+      "lat": -34.923477,
+      "lon": -58.9531,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "burger",
+        "name": "Atomik Burguer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12319118289,
+      "lat": -34.750632,
+      "lon": -58.702616,
+      "tags": {
+        "name": "Padua",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12454369228,
+      "lat": -35.149527,
+      "lon": -59.07702,
+      "tags": {
+        "addr:city": "empalme",
+        "addr:street": "Irlanda",
+        "email": "gabytrabazzo278@gmail.com",
+        "name": "molino de empalme",
+        "tourism": "guest_house"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12734179707,
+      "lat": -34.814281,
+      "lon": -58.538381,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Burger King",
+        "cuisine": "burger",
+        "name": "Burger King"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12734411376,
+      "lat": -34.816082,
+      "lon": -58.542115,
+      "tags": {
+        "amenity": "cafe",
+        "name": "La Panera Rosa"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12801125372,
+      "lat": -35.050819,
+      "lon": -58.765164,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Cipressi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13116952495,
+      "lat": -34.933641,
+      "lon": -58.944453,
+      "tags": {
+        "name": "Cuidarte el Alma",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13187677406,
+      "lat": -34.848627,
+      "lon": -58.50443,
+      "tags": {
+        "addr:city": "El Jagüel",
+        "addr:housenumber": "374",
+        "addr:postcode": "B1805HRQ",
+        "addr:street": "Avenida Mariano Castex",
+        "amenity": "fast_food",
+        "brand": "Mostaza",
+        "cuisine": "burger",
+        "name": "Mostaza"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13240851839,
+      "lat": -34.917775,
+      "lon": -58.956078,
+      "tags": {
+        "man_made": "works",
+        "name": "RVM"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13240851841,
+      "lat": -34.916418,
+      "lon": -58.953359,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Carana by SRM"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13240851842,
+      "lat": -34.914385,
+      "lon": -58.946849,
+      "tags": {
+        "man_made": "works",
+        "name": "COX"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13421633449,
+      "lat": -34.895459,
+      "lon": -58.434669,
+      "tags": {
+        "amenity": "cafe",
+        "name": "YPF Full"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13432793589,
+      "lat": -35.115247,
+      "lon": -58.882694,
+      "tags": {
+        "name": "Buenos Cielos",
+        "phone": "+54 11 3907 8434",
+        "tourism": "guest_house"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13435766363,
+      "lat": -35.024473,
+      "lon": -58.745893,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "cuisine": "burger",
+        "name": "McDonald's"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13625332701,
+      "lat": -34.81606,
+      "lon": -58.541238,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Tostado"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13673263801,
+      "lat": -34.85425,
+      "lon": -58.517259,
+      "tags": {
+        "addr:housenumber": "272",
+        "addr:postcode": "B1872",
+        "addr:street": "Arribeños",
+        "amenity": "cafe",
+        "name": "Meme Café de Especialidad",
+        "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-14:00, 17:00-20:00"
+      }
+    },
+    {
+      "type": "way",
+      "id": 49899404,
+      "lat": -34.901594,
+      "lon": -58.585939,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Ángel Estrada"
+      }
+    },
+    {
+      "type": "way",
+      "id": 49900013,
+      "lat": -34.911876,
+      "lon": -58.598082,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Mascardi"
+      }
+    },
+    {
+      "type": "way",
+      "id": 49900045,
+      "lat": -34.909089,
+      "lon": -58.599022,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Gilera"
+      }
+    },
+    {
+      "type": "way",
+      "id": 49900148,
+      "lat": -34.903596,
+      "lon": -58.603508,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Chemotecnica"
+      }
+    },
+    {
+      "type": "way",
+      "id": 50058826,
+      "lat": -34.874928,
+      "lon": -58.518802,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Parque industrial Canning III"
+      }
+    },
+    {
+      "type": "way",
+      "id": 50228234,
+      "lat": -34.915801,
+      "lon": -58.562563,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Ladrilleras"
+      }
+    },
+    {
+      "type": "way",
+      "id": 50239641,
+      "lat": -34.919903,
+      "lon": -58.603932,
+      "tags": {
+        "industrial": "depot",
+        "landuse": "industrial",
+        "name": "Terminal Lineas 306 y 518",
+        "operator": "E.E.E. - E.J.M.E."
+      }
+    },
+    {
+      "type": "way",
+      "id": 50239795,
+      "lat": -34.954802,
+      "lon": -58.639055,
+      "tags": {
+        "landuse": "industrial",
+        "man_made": "works",
+        "name": "Loma Negra"
+      }
+    },
+    {
+      "type": "way",
+      "id": 174334194,
+      "lat": -34.878976,
+      "lon": -58.507946,
+      "tags": {
+        "building": "industrial",
+        "name": "Nave H, I"
+      }
+    },
+    {
+      "type": "way",
+      "id": 179545933,
+      "lat": -34.902659,
+      "lon": -58.734927,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Central Termoeléctrica Genelba",
+        "operator": "Pampa Energía"
+      }
+    },
+    {
+      "type": "way",
+      "id": 182105986,
+      "lat": -34.926429,
+      "lon": -58.984628,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Parque industrial de General Las Heras"
+      }
+    },
+    {
+      "type": "way",
+      "id": 195762507,
+      "lat": -34.826628,
+      "lon": -58.939828,
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "steak_house",
+        "name": "Rosendo, asador de campo",
+        "opening_hours": "Tu-Su 11:30-16:00",
+        "phone": "+54 11 6711 9876",
+        "website": "http://www.rosendovillars.com.ar/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 213156855,
+      "lat": -34.832861,
+      "lon": -58.570015,
+      "tags": {
+        "building": "yes",
+        "man_made": "works",
+        "name": "CONUAR",
+        "product": "nuclear_fuel_elements"
+      }
+    },
+    {
+      "type": "way",
+      "id": 213156877,
+      "lat": -34.83096,
+      "lon": -58.568196,
+      "tags": {
+        "building": "yes",
+        "man_made": "works",
+        "name": "Fabrica de Aleaciones Especiales",
+        "product": "alloys"
+      }
+    },
+    {
+      "type": "way",
+      "id": 216734312,
+      "lat": -34.880472,
+      "lon": -58.50817,
+      "tags": {
+        "building": "industrial",
+        "name": "Nave A, B"
+      }
+    },
+    {
+      "type": "way",
+      "id": 216734313,
+      "lat": -34.879609,
+      "lon": -58.507691,
+      "tags": {
+        "building": "industrial",
+        "name": "Nave E, F G"
+      }
+    },
+    {
+      "type": "way",
+      "id": 216734791,
+      "lat": -34.879826,
+      "lon": -58.50726,
+      "tags": {
+        "building": "industrial",
+        "name": "Nave C, D, Ing."
+      }
+    },
+    {
+      "type": "way",
+      "id": 217173398,
+      "lat": -34.880366,
+      "lon": -58.507189,
+      "tags": {
+        "building": "industrial",
+        "name": "Comedor"
+      }
+    },
+    {
+      "type": "way",
+      "id": 217173400,
+      "lat": -34.880702,
+      "lon": -58.507131,
+      "tags": {
+        "building": "industrial",
+        "name": "Vesturario"
+      }
+    },
+    {
+      "type": "way",
+      "id": 217173405,
+      "lat": -34.880276,
+      "lon": -58.50978,
+      "tags": {
+        "building": "industrial",
+        "name": "Pintura"
+      }
+    },
+    {
+      "type": "way",
+      "id": 223217597,
+      "lat": -34.790016,
+      "lon": -58.840761,
+      "tags": {
+        "industrial": "scrap_yard",
+        "landuse": "industrial",
+        "name": "Corralón municipal de Marcos Paz"
+      }
+    },
+    {
+      "type": "way",
+      "id": 226928353,
+      "lat": -34.872768,
+      "lon": -58.66489,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Parque Industrial de La Matanza"
+      }
+    },
+    {
+      "type": "way",
+      "id": 226928354,
+      "lat": -34.874282,
+      "lon": -58.682863,
+      "tags": {
+        "landuse": "industrial",
+        "man_made": "works",
+        "name": "Mercedes-Benz"
+      }
+    },
+    {
+      "type": "way",
+      "id": 240447236,
+      "lat": -34.864248,
+      "lon": -58.58101,
+      "tags": {
+        "building": "yes",
+        "name": "Howard Johnson Ezeiza",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 241957500,
+      "lat": -35.285899,
+      "lon": -58.804468,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Reposo S. A."
+      }
+    },
+    {
+      "type": "way",
+      "id": 253676173,
+      "lat": -35.186285,
+      "lon": -59.074084,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Coca-Cola"
+      }
+    },
+    {
+      "type": "way",
+      "id": 267214932,
+      "lat": -34.798941,
+      "lon": -58.850466,
+      "tags": {
+        "addr:city": "Marcos Paz",
+        "addr:housenumber": "199",
+        "addr:postcode": "1727",
+        "addr:street": "Josefina Polero",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "La Escondida"
+      }
+    },
+    {
+      "type": "way",
+      "id": 295765566,
+      "lat": -34.890461,
+      "lon": -58.433189,
+      "tags": {
+        "addr:city": "Monte Grande",
+        "addr:housenumber": "Parcela 501",
+        "addr:street": "Camino de las Latas",
+        "landuse": "farmyard",
+        "name": "Refugio \"El Campito\"",
+        "website": "https://www.elcampitorefugio.org/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 369402860,
+      "lat": -35.054352,
+      "lon": -58.424311,
+      "tags": {
+        "addr:city": "San Vicente",
+        "addr:housenumber": "Km.62",
+        "addr:street": "Ruta Provincial 6 Gobernador Antonio Francisco Cafiero",
+        "email": "info@parquesanvicente.com.ar",
+        "landuse": "industrial",
+        "name": "Parque Industrial Privado \"San Vicente\"",
+        "phone": "+54 11 4295-9565; +54 11 4295-9566",
+        "website": "http://www.parquesanvicente.com.ar/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 372418532,
+      "lat": -34.831905,
+      "lon": -58.505411,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Centro de Distribución Musimundo"
+      }
+    },
+    {
+      "type": "way",
+      "id": 372425074,
+      "lat": -34.844478,
+      "lon": -58.476687,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Frigorífico El Faraón"
+      }
+    },
+    {
+      "type": "way",
+      "id": 372425075,
+      "lat": -34.842264,
+      "lon": -58.483569,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Femsa Coca-Cola"
+      }
+    },
+    {
+      "type": "way",
+      "id": 372613261,
+      "lat": -34.835451,
+      "lon": -58.503436,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Plaza Logística Esteban Echeverría"
+      }
+    },
+    {
+      "type": "way",
+      "id": 372749597,
+      "lat": -34.818158,
+      "lon": -58.506894,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Rasic"
+      }
+    },
+    {
+      "type": "way",
+      "id": 383551831,
+      "lat": -35.113076,
+      "lon": -58.899301,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Recycomb"
+      }
+    },
+    {
+      "type": "way",
+      "id": 384852953,
+      "lat": -34.897383,
+      "lon": -58.584901,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Transporte Don Pedro - DHL"
+      }
+    },
+    {
+      "type": "way",
+      "id": 386673237,
+      "lat": -34.884407,
+      "lon": -58.556751,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Centro Logístico Municipal"
+      }
+    },
+    {
+      "type": "way",
+      "id": 386687938,
+      "lat": -34.880797,
+      "lon": -58.550635,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Rasic"
+      }
+    },
+    {
+      "type": "way",
+      "id": 387763878,
+      "lat": -34.904017,
+      "lon": -58.624314,
+      "tags": {
+        "landuse": "industrial",
+        "name": "BGH"
+      }
+    },
+    {
+      "type": "way",
+      "id": 387763879,
+      "lat": -34.901857,
+      "lon": -58.621969,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Sinteplast"
+      }
+    },
+    {
+      "type": "way",
+      "id": 407368266,
+      "lat": -34.836885,
+      "lon": -58.506664,
+      "tags": {
+        "landuse": "industrial",
+        "name": "QX Logística SA."
+      }
+    },
+    {
+      "type": "way",
+      "id": 407692490,
+      "lat": -34.835761,
+      "lon": -58.506892,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Centro de Distribución Continental"
+      }
+    },
+    {
+      "type": "way",
+      "id": 437520889,
+      "lat": -34.832577,
+      "lon": -58.652641,
+      "tags": {
+        "industrial": "factory",
+        "landuse": "industrial",
+        "man_made": "works",
+        "name": "Fábrica Oblak Hermanos",
+        "product": "doors",
+        "website": "https://www.oblak.com.ar/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 440508742,
+      "lat": -34.880123,
+      "lon": -58.508566,
+      "tags": {
+        "landuse": "industrial",
+        "name": "AESA Planta Canning"
+      }
+    },
+    {
+      "type": "way",
+      "id": 440508743,
+      "lat": -34.876148,
+      "lon": -58.513044,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Ternium Siderar Planta Canning"
+      }
+    },
+    {
+      "type": "way",
+      "id": 440508744,
+      "lat": -34.878058,
+      "lon": -58.522486,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Parque Industrial Canning I y II"
+      }
+    },
+    {
+      "type": "way",
+      "id": 440740544,
+      "lat": -34.839961,
+      "lon": -58.481136,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Covelia"
+      }
+    },
+    {
+      "type": "way",
+      "id": 440746810,
+      "lat": -34.845613,
+      "lon": -58.485312,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Quimica True"
+      }
+    },
+    {
+      "type": "way",
+      "id": 440746811,
+      "lat": -34.845082,
+      "lon": -58.48428,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Quimica True"
+      }
+    },
+    {
+      "type": "way",
+      "id": 449465753,
+      "lat": -34.812348,
+      "lon": -58.844482,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Zona Industrial Exclusiva"
+      }
+    },
+    {
+      "type": "way",
+      "id": 459219610,
+      "lat": -34.839013,
+      "lon": -58.50794,
+      "tags": {
+        "building": "yes",
+        "landuse": "industrial",
+        "name": "Transportes Escorial S.R.L."
+      }
+    },
+    {
+      "type": "way",
+      "id": 459223951,
+      "lat": -34.849557,
+      "lon": -58.523685,
+      "tags": {
+        "addr:street": "French",
+        "building": "yes",
+        "name": "Lo Bueno",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "way",
+      "id": 459240829,
+      "lat": -34.884176,
+      "lon": -58.505186,
+      "tags": {
+        "addr:street": "Ruta Provincial 58",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "El Tano"
+      }
+    },
+    {
+      "type": "way",
+      "id": 459244638,
+      "lat": -34.876547,
+      "lon": -58.503764,
+      "tags": {
+        "building": "yes",
+        "name": "Musel",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "way",
+      "id": 459244645,
+      "lat": -34.887571,
+      "lon": -58.506476,
+      "tags": {
+        "addr:street": "Ruta Provincial 58",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "pizza",
+        "name": "La Farela"
+      }
+    },
+    {
+      "type": "way",
+      "id": 461015434,
+      "lat": -34.939935,
+      "lon": -58.617493,
+      "tags": {
+        "addr:street": "Avenida Pereda",
+        "building": "yes",
+        "name": "Panadería - Don Eduardo",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "way",
+      "id": 467482805,
+      "lat": -34.842682,
+      "lon": -58.519046,
+      "tags": {
+        "addr:street": "San Lorenzo",
+        "building": "yes",
+        "name": "Las Nuevo",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "way",
+      "id": 467496930,
+      "lat": -34.911856,
+      "lon": -58.595703,
+      "tags": {
+        "addr:street": "Sudamérica",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "El Palenque"
+      }
+    },
+    {
+      "type": "way",
+      "id": 467508518,
+      "lat": -34.86216,
+      "lon": -58.525344,
+      "tags": {
+        "addr:street": "Gregorio de Lamadrid",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "La Picadita"
+      }
+    },
+    {
+      "type": "way",
+      "id": 467512227,
+      "lat": -34.860217,
+      "lon": -58.502157,
+      "tags": {
+        "addr:city": "Canning",
+        "addr:housenumber": "1356",
+        "addr:postcode": "1807",
+        "addr:street": "Avenida Mariano Castex",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "sushi",
+        "email": "contacto@sushiclub.com.ar",
+        "name": "SushiClub",
+        "opening_hours": "Su-We 19:30-24:00; Th 19:30-01:00; Fr,Sa 19:30-02:00",
+        "website": "https://www.sushiclub.com.ar/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 467512232,
+      "lat": -34.856914,
+      "lon": -58.502361,
+      "tags": {
+        "addr:street": "Avenida Mariano Castex",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "grill",
+        "name": "Casa de Carnes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 468017946,
+      "lat": -34.85217,
+      "lon": -58.504147,
+      "tags": {
+        "addr:street": "Avenida Mariano Castex",
+        "amenity": "car_wash",
+        "building": "yes",
+        "name": "Boyes Car Wash"
+      }
+    },
+    {
+      "type": "way",
+      "id": 506092724,
+      "lat": -34.903725,
+      "lon": -58.616983,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Central Térmica Ezeiza"
+      }
+    },
+    {
+      "type": "way",
+      "id": 511771936,
+      "lat": -34.874573,
+      "lon": -58.508199,
+      "tags": {
+        "building": "industrial",
+        "name": "Quimica"
+      }
+    },
+    {
+      "type": "way",
+      "id": 523505648,
+      "lat": -34.88873,
+      "lon": -58.53845,
+      "tags": {
+        "landuse": "farmyard",
+        "name": "Quinta Sol de Oro"
+      }
+    },
+    {
+      "type": "way",
+      "id": 523509849,
+      "lat": -34.881132,
+      "lon": -58.508416,
+      "tags": {
+        "building": "industrial",
+        "name": "Almacenes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 523509853,
+      "lat": -34.881647,
+      "lon": -58.510801,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Fundición"
+      }
+    },
+    {
+      "type": "way",
+      "id": 593214850,
+      "lat": -34.859462,
+      "lon": -58.888721,
+      "tags": {
+        "addr:city": "General Las Heras",
+        "addr:housenumber": "Km 66.500",
+        "addr:postcode": "B1741",
+        "addr:street": "Ruta Provincial 6",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "regional;chicken;steak_house;ice_cream;barbecue;grill;sandwich",
+        "name": "El Nuevo Bagual"
+      }
+    },
+    {
+      "type": "way",
+      "id": 612457137,
+      "lat": -34.91122,
+      "lon": -58.599504,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Glassbeads"
+      }
+    },
+    {
+      "type": "way",
+      "id": 612457139,
+      "lat": -34.910312,
+      "lon": -58.597814,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Anticorr"
+      }
+    },
+    {
+      "type": "way",
+      "id": 612457140,
+      "lat": -34.90547,
+      "lon": -58.598616,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Merck"
+      }
+    },
+    {
+      "type": "way",
+      "id": 612457142,
+      "lat": -34.906787,
+      "lon": -58.597611,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Supercemento"
+      }
+    },
+    {
+      "type": "way",
+      "id": 625283219,
+      "lat": -35.024134,
+      "lon": -58.423481,
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Boston Resto Café"
+      }
+    },
+    {
+      "type": "way",
+      "id": 625286999,
+      "lat": -35.024039,
+      "lon": -58.42333,
+      "tags": {
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Cuando Quieras"
+      }
+    },
+    {
+      "type": "way",
+      "id": 625287000,
+      "lat": -35.02395,
+      "lon": -58.423139,
+      "tags": {
+        "building": "yes",
+        "name": "El Léon",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "way",
+      "id": 634465248,
+      "lat": -34.945524,
+      "lon": -59.044409,
+      "tags": {
+        "industrial": "factory",
+        "landuse": "industrial",
+        "name": "Lacteos Barraza",
+        "phone": "+54(11)4568-8283;+54(11)4568-9547",
+        "product": "cheese",
+        "website": "https://www.lacteosbarraza.com.ar/home/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 653680968,
+      "lat": -34.76143,
+      "lon": -58.621224,
+      "tags": {
+        "industrial": "depot",
+        "landuse": "industrial",
+        "name": "Terminal La Vecinal de La Matanza"
+      }
+    },
+    {
+      "type": "way",
+      "id": 660355810,
+      "lat": -35.021984,
+      "lon": -58.71789,
+      "tags": {
+        "building": "industrial",
+        "name": "Cerámica Cañuelas"
+      }
+    },
+    {
+      "type": "way",
+      "id": 660355818,
+      "lat": -35.05769,
+      "lon": -58.791574,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Probiar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 660355819,
+      "lat": -35.056237,
+      "lon": -58.795062,
+      "tags": {
+        "landuse": "industrial",
+        "name": "ExtraGas"
+      }
+    },
+    {
+      "type": "way",
+      "id": 717278176,
+      "lat": -35.033107,
+      "lon": -58.72396,
+      "tags": {
+        "addr:city": "Cañuelas",
+        "addr:housenumber": "92,5",
+        "addr:postcode": "1814",
+        "addr:street": "Ruta Provincial 6 Gobernador Antonio Francisco Cafiero",
+        "building": "industrial",
+        "name": "Madedera LLavallol"
+      }
+    },
+    {
+      "type": "way",
+      "id": 732154108,
+      "lat": -34.865456,
+      "lon": -58.663432,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Manaos"
+      }
+    },
+    {
+      "type": "way",
+      "id": 732154109,
+      "lat": -34.865868,
+      "lon": -58.667055,
+      "tags": {
+        "industrial": "depot",
+        "landuse": "industrial",
+        "name": "Terminal líneas 382 y 620",
+        "operator": "Nuevo Ideal S.A."
+      }
+    },
+    {
+      "type": "way",
+      "id": 732166539,
+      "lat": -34.901784,
+      "lon": -58.626012,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Distribuidora Metropolitana"
+      }
+    },
+    {
+      "type": "way",
+      "id": 732166540,
+      "lat": -34.889659,
+      "lon": -58.62229,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Larocca Mineria"
+      }
+    },
+    {
+      "type": "way",
+      "id": 732166541,
+      "lat": -34.890069,
+      "lon": -58.618489,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Criferix"
+      }
+    },
+    {
+      "type": "way",
+      "id": 732166542,
+      "lat": -34.890105,
+      "lon": -58.616218,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Conteman"
+      }
+    },
+    {
+      "type": "way",
+      "id": 732166543,
+      "lat": -34.892384,
+      "lon": -58.62113,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Parnor"
+      }
+    },
+    {
+      "type": "way",
+      "id": 732166544,
+      "lat": -34.893093,
+      "lon": -58.617953,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Almacén de Frio"
+      }
+    },
+    {
+      "type": "way",
+      "id": 732166545,
+      "lat": -34.8943,
+      "lon": -58.61963,
+      "tags": {
+        "landuse": "industrial",
+        "name": "El Bahiense"
+      }
+    },
+    {
+      "type": "way",
+      "id": 732166547,
+      "lat": -34.894258,
+      "lon": -58.616567,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Iron Mountain"
+      }
+    },
+    {
+      "type": "way",
+      "id": 732166548,
+      "lat": -34.899379,
+      "lon": -58.618642,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Vesprini"
+      }
+    },
+    {
+      "type": "way",
+      "id": 732166549,
+      "lat": -34.898806,
+      "lon": -58.617224,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Marblock"
+      }
+    },
+    {
+      "type": "way",
+      "id": 732166550,
+      "lat": -34.898197,
+      "lon": -58.616227,
+      "tags": {
+        "description": "Flamia",
+        "industrial": "extrusion_de_aluminio",
+        "landuse": "industrial",
+        "name": "Flamia S.A.I.C.I. y A."
+      }
+    },
+    {
+      "type": "way",
+      "id": 732166551,
+      "lat": -34.896379,
+      "lon": -58.614569,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Deposito ribeiro"
+      }
+    },
+    {
+      "type": "way",
+      "id": 732166552,
+      "lat": -34.89459,
+      "lon": -58.611894,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Molinos Cañelas"
+      }
+    },
+    {
+      "type": "way",
+      "id": 732166553,
+      "lat": -34.893006,
+      "lon": -58.609498,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Grupo Odin"
+      }
+    },
+    {
+      "type": "way",
+      "id": 757729970,
+      "lat": -34.780387,
+      "lon": -58.801177,
+      "tags": {
+        "landuse": "farmyard",
+        "name": "Avicola Granja Mari & Avicola Smidht"
+      }
+    },
+    {
+      "type": "way",
+      "id": 878934914,
+      "lat": -34.832345,
+      "lon": -58.513478,
+      "tags": {
+        "email": "info@surfrigo.com.ar",
+        "industrial": "factory",
+        "landuse": "industrial",
+        "name": "Surfrigo",
+        "phone": "+54 11 6091 2320"
+      }
+    },
+    {
+      "type": "way",
+      "id": 878934915,
+      "lat": -34.832772,
+      "lon": -58.513433,
+      "tags": {
+        "building": "industrial",
+        "craft": "electronics_repair",
+        "name": "Frost-center"
+      }
+    },
+    {
+      "type": "way",
+      "id": 878934919,
+      "lat": -34.83148,
+      "lon": -58.513365,
+      "tags": {
+        "building": "industrial",
+        "name": "Servicio Técnico"
+      }
+    },
+    {
+      "type": "way",
+      "id": 890868869,
+      "lat": -35.053609,
+      "lon": -58.420606,
+      "tags": {
+        "addr:city": "San Vicente",
+        "building": "industrial",
+        "email": "info@aligas.com",
+        "name": "Aligas",
+        "opening_hours": "Mo-Fr 08:00-17:00",
+        "phone": "+54 115917-5090",
+        "website": "https://www.aligas.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 910673146,
+      "lat": -34.930128,
+      "lon": -58.829156,
+      "tags": {
+        "addr:city": "General Las Heras",
+        "addr:housenumber": "Km 107,200",
+        "addr:postcode": "1741",
+        "addr:street": "Ruta Provincial 6",
+        "email": "carniceria@cabargentina.com",
+        "industrial": "factory",
+        "landuse": "industrial",
+        "name": "Cabaña Argentina",
+        "phone": "+54 11 5368 3800",
+        "website": "https://www.cabanadirecto.com.ar/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 910762551,
+      "lat": -34.825128,
+      "lon": -58.866215,
+      "tags": {
+        "addr:city": "Marcos Paz",
+        "addr:housenumber": "Km 53,500",
+        "addr:postcode": "1727",
+        "addr:street": "Ruta Provincial 40",
+        "building": "industrial",
+        "email": "ventas@javifer.com.ar",
+        "name": "Lácteos Javifer",
+        "phone": "+54 220 477 5410",
+        "website": "https://www.javifer.com.ar/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 976703411,
+      "lat": -35.072196,
+      "lon": -58.84663,
+      "tags": {
+        "industrial": "mobile_equipment",
+        "landuse": "industrial",
+        "name": "Jáuregui Lorda Maquinarias Viales"
+      }
+    },
+    {
+      "type": "way",
+      "id": 988711930,
+      "lat": -34.880658,
+      "lon": -58.510529,
+      "tags": {
+        "building": "industrial",
+        "name": "Pintura"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1005337047,
+      "lat": -35.186839,
+      "lon": -59.096348,
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "description": "Delivery Miercolés a Domingo a partir de las 19 hs",
+        "name": "Livana",
+        "phone": "+54 2227 55 5583"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1007820173,
+      "lat": -35.185029,
+      "lon": -59.097063,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:housenumber": "17",
+        "addr:street": "9 de Julio",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "coffee_shop",
+        "name": "Pericles",
+        "phone": "+54 2227 422150"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1011497840,
+      "lat": -34.815114,
+      "lon": -58.570451,
+      "tags": {
+        "landuse": "industrial",
+        "name": "City Gate Ezeiza",
+        "operator": "Transportadora de Gas del Sur S.A."
+      }
+    },
+    {
+      "type": "way",
+      "id": 1011532776,
+      "lat": -34.760215,
+      "lon": -58.861078,
+      "tags": {
+        "landuse": "industrial",
+        "name": "City Gate Marcos Paz"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1013583243,
+      "lat": -35.172277,
+      "lon": -59.094126,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:housenumber": "1445",
+        "addr:street": "Arturo Cardoner",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "pasta",
+        "name": "Boccarino fabrica de pastas",
+        "phone": "+54 2227 43-1239",
+        "website": "https://www.facebook.com/PastasBoccarino/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1026112540,
+      "lat": -35.186563,
+      "lon": -59.103324,
+      "tags": {
+        "building": "yes",
+        "name": "Las Araucarias",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1035482636,
+      "lat": -34.844206,
+      "lon": -58.484798,
+      "tags": {
+        "amenity": "cafe",
+        "name": "San Antonio"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1049306211,
+      "lat": -35.194011,
+      "lon": -59.108805,
+      "tags": {
+        "industrial": "slaughterhouse",
+        "landuse": "industrial",
+        "name": "Industria Frigorífica Lobos S.A."
+      }
+    },
+    {
+      "type": "way",
+      "id": 1050097910,
+      "lat": -35.183882,
+      "lon": -59.097516,
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "coffee_shop;regional",
+        "name": "La Marina",
+        "phone": "+54 2227 431097"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1067030394,
+      "lat": -34.970207,
+      "lon": -58.684867,
+      "tags": {
+        "contact:email": "info@ingevial.com.ar",
+        "contact:phone": "+54 11 4761-1700",
+        "contact:website": "https://www.ingevial.com.ar/",
+        "landuse": "industrial",
+        "name": "Construcciones Ingevial"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1067451700,
+      "lat": -34.893767,
+      "lon": -58.601798,
+      "tags": {
+        "industrial": "brickyard",
+        "landuse": "industrial",
+        "name": "Cerámicos Spegazzini",
+        "product": "bricks"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1070091694,
+      "lat": -34.94957,
+      "lon": -58.655393,
+      "tags": {
+        "landuse": "farmyard",
+        "name": "Granja 4"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1084508751,
+      "lat": -35.152617,
+      "lon": -59.08942,
+      "tags": {
+        "building": "yes",
+        "man_made": "works",
+        "name": "Electromac"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1088317739,
+      "lat": -34.803579,
+      "lon": -58.542261,
+      "tags": {
+        "landuse": "industrial",
+        "name": "AXION Energy"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1088317747,
+      "lat": -34.803013,
+      "lon": -58.541543,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Shell"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1090619055,
+      "lat": -34.809854,
+      "lon": -58.547084,
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "steak_house",
+        "name": "La Vaca",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1090800367,
+      "lat": -35.196291,
+      "lon": -59.085978,
+      "tags": {
+        "addr:city": "Lobos",
+        "addr:street": "Doctor Lisandro de la Torre",
+        "building": "industrial",
+        "name": "Seipac Saica"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1097527686,
+      "lat": -35.18304,
+      "lon": -59.098639,
+      "tags": {
+        "addr:city": "Lobos",
+        "building": "yes",
+        "name": "Class",
+        "phone": "+54 2227 43-0090",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1128451661,
+      "lat": -35.152334,
+      "lon": -59.094706,
+      "tags": {
+        "landuse": "farmyard",
+        "name": "Polo Productivo Agroecologico",
+        "operator": "Movimiento evita"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1188078703,
+      "lat": -34.928203,
+      "lon": -58.977996,
+      "tags": {
+        "building": "yes",
+        "industrial": "slaughterhouse",
+        "landuse": "industrial",
+        "name": "Frigorìfico de General las heras"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1194160239,
+      "lat": -34.871604,
+      "lon": -58.623471,
+      "tags": {
+        "landuse": "industrial",
+        "man_made": "works",
+        "name": "Polo Industrial Ezeiza"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1206213257,
+      "lat": -34.913697,
+      "lon": -58.949881,
+      "tags": {
+        "building": "yes",
+        "man_made": "works",
+        "name": "Shulet"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1216164469,
+      "lat": -34.947558,
+      "lon": -58.464742,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Mostaza",
+        "building": "yes",
+        "cuisine": "burger",
+        "name": "Mostaza"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1221557765,
+      "lat": -34.926339,
+      "lon": -58.947294,
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Clap"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1237365585,
+      "lat": -34.854546,
+      "lon": -58.885278,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Parque Industrial Marcos Paz"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1238717443,
+      "lat": -34.789964,
+      "lon": -58.674539,
+      "tags": {
+        "industrial": "scrap_yard",
+        "landuse": "industrial",
+        "name": "Depósito automotor La Matanza"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1239396539,
+      "lat": -34.902158,
+      "lon": -58.511741,
+      "tags": {
+        "addr:city": "Canning",
+        "addr:housenumber": "5325",
+        "addr:street": "ex-Ruta Provincial 52",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "pizza;mexican;italian;ice_cream;steak_house",
+        "name": "All Canning",
+        "website": "https://allcanning.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1270236178,
+      "lat": -34.847977,
+      "lon": -59.045527,
+      "tags": {
+        "landuse": "farmyard",
+        "name": "Estancia Los Raules"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1282000019,
+      "lat": -34.752145,
+      "lon": -58.682958,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Plásticos Pontevedra"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1289653622,
+      "lat": -35.061351,
+      "lon": -58.740416,
+      "tags": {
+        "building": "yes",
+        "industrial": "slaughterhouse",
+        "landuse": "industrial",
+        "name": "Frigorífico Supremo"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1300958166,
+      "lat": -34.769765,
+      "lon": -58.821232,
+      "tags": {
+        "industrial": "depot",
+        "landuse": "industrial",
+        "name": "Terminal de Colectivos municipales Marcos Paz"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1309469702,
+      "lat": -35.153938,
+      "lon": -59.090962,
+      "tags": {
+        "man_made": "works",
+        "name": "Electrolobos"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1313089342,
+      "lat": -35.165374,
+      "lon": -59.048027,
+      "tags": {
+        "building": "industrial",
+        "name": "SanSatur SAA"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1316488209,
+      "lat": -34.803088,
+      "lon": -58.8506,
+      "tags": {
+        "industrial": "depot",
+        "landuse": "industrial",
+        "name": "Terminal Líneas 136 - 322",
+        "operator": "Metropol"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1388097784,
+      "lat": -34.906137,
+      "lon": -58.703288,
+      "tags": {
+        "industrial": "depot",
+        "landuse": "industrial",
+        "name": "Terminal Expreso Liniers"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1410467558,
+      "lat": -34.857646,
+      "lon": -58.810023,
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Rancho San Cayetano"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1411043964,
+      "lat": -35.16504,
+      "lon": -59.045744,
+      "tags": {
+        "addr:city": "Lobos",
+        "building": "industrial",
+        "name": "San Satur"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1446750209,
+      "lat": -34.871739,
+      "lon": -58.667135,
+      "tags": {
+        "building": "industrial",
+        "name": "Lenterdit SA - V. Del Pino"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1464862339,
+      "lat": -35.024471,
+      "lon": -58.745878,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "building": "yes",
+        "cuisine": "burger",
+        "name": "McDonald's"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1496802079,
+      "lat": -34.891359,
+      "lon": -58.549817,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Hormigón Canning"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1527674392,
+      "lat": -35.01776,
+      "lon": -58.478682,
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Pampa Cocina",
+        "opening_hours": "Sa 12:00-16:00",
+        "website": "https://www.instagram.com/pampacocina.sv/"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 7750498,
+      "lat": -34.847895,
+      "lon": -58.835215,
+      "tags": {
+        "landuse": "farmyard",
+        "name": "Colonia Hogar Ricardo Gutiérrez"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 13091483,
+      "lat": -35.004116,
+      "lon": -58.78239,
+      "tags": {
+        "contact:email": "contacto@parquecanuelas.com.ar",
+        "contact:phone": "+54 9 11 15 6028 3345",
+        "contact:website": "https://www.parquecanuelas.com.ar/",
+        "landuse": "industrial",
+        "name": "Parque Industrial Cañuelas"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 13091484,
+      "lat": -35.003104,
+      "lon": -58.787784,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Parque 2"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 13091485,
+      "lat": -35.005931,
+      "lon": -58.776243,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Parque 1"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 13894688,
+      "lat": -34.747499,
+      "lon": -58.682828,
+      "tags": {
+        "addr:housenumber": "5250",
+        "addr:street": "Otero",
+        "landuse": "industrial",
+        "name": "Swift Argentina S.A."
+      }
+    },
+    {
+      "type": "relation",
+      "id": 14226367,
+      "lat": -34.907937,
+      "lon": -58.612267,
+      "tags": {
+        "addr:housenumber": "1300",
+        "addr:street": "San Salvador de Jujuy",
+        "contact:email": "info@alberdidesarrollos.com.ar",
+        "contact:phone": "+54 011 4322-0758",
+        "contact:website": "http://alberdidesarrollos.com.ar/polo-industrial-spegazzini/",
+        "landuse": "industrial",
+        "name": "Polo Industrial Spegazzini"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 19064514,
+      "lat": -35.057393,
+      "lon": -58.750201,
+      "tags": {
+        "landuse": "industrial",
+        "name": "Molino Cañuelas"
+      }
+    }
+  ]
+}

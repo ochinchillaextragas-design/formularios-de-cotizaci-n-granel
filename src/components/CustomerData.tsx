@@ -1,3 +1,4 @@
+import { IdentificationCard } from '@phosphor-icons/react'
 import type { Customer } from '../types/quotation'
 import { Section } from './Section'
 const provinces = [
@@ -13,7 +14,7 @@ export function CustomerData({ value, onChange }: Props) {
   const field = (key: keyof Customer, next: string) => onChange({ ...value, [key]: next })
 
   return (
-    <Section title="📋 Datos del Cliente">
+    <Section title="Datos del Cliente" icon={IdentificationCard}>
       <div className="grid">
         <label className="wide" htmlFor="customer-name">Razón Social / Nombre y Apellido</label>
         <input id="customer-name" name="customerName" className="wide" value={value.name} onChange={e => field('name', e.target.value)} />
